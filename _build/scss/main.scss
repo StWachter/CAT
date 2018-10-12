@@ -20,6 +20,9 @@ $colorPrimary: #7FB3D5;
 $colorSecondary: white;
 $colorTertiary: #464646;
 
+// sizes
+
+
 
 
 /* --------------------------------------------------------------------------- */
@@ -50,3 +53,5 @@ $colorTertiary: #464646;
 @import 'animation';
 @import 'section';
 @import 'meeting';
+@import 'footer';
+@import 'gallery';

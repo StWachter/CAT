@@ -1,0 +1,21 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	footer
+/*
+/* --------------------------------------------------------------------------- */
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    color: $colorSecondary;
+    text-transform: uppercase;
+	@media (max-width: 320px) {}
+
+    & li {
+        padding-left: 2rem;
+    }
+
+    &__wrapper {
+        background-color: $colorTertiary;
+    }
+}
