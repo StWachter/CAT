@@ -1,0 +1,27 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	section
+/*
+/* --------------------------------------------------------------------------- */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
+
+
+	@media (max-width: 850px) {
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        background: rgba(255,255,255,0.85);
+    }
+
+}

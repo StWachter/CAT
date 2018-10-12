@@ -1,0 +1,20 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	animation
+/*
+/* --------------------------------------------------------------------------- */
+.animation {
+
+    &--slideFade {
+        animation: 1s slidefade 1s forwards;
+    }
+
+	@media (max-width: 320px) {}
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}

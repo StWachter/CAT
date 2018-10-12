@@ -1,0 +1,60 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	header
+/*
+/* --------------------------------------------------------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+
+	@media (max-width: 320px) {}
+
+    &__wrapper {
+        position: fixed;
+        width: 100%;
+        background-color: $colorPrimary;
+        color: $colorSecondary;
+        z-index: 5;
+    }
+
+    &__toggle {
+        background: none;
+        color: $colorTertiary;
+
+
+        & .header__logo {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__logo {
+        font-weight: 600;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 50rem;
+
+        &Item {
+            padding-left: 2rem;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    &__button {
+        display: none;
+        font-weight: 600;
+
+        &.active {
+            display: block;
+        }
+    }
+}
