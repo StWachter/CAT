@@ -57,6 +57,7 @@ $(document).ready(function() {
 
     $(".header__button").click(function(){
         $(".header__navItem").toggleClass("active");
+        $(".header__button").toggleClass("active");
     });
 
     // * * * * * * * * * * * * * * * * * * * * * * * * *
