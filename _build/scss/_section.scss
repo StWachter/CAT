@@ -7,12 +7,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 75%;
 
     & h1, h2, h3 {
         font-family: $fontSecondary;
         width: 95%;
         text-align: center;
+    }
+
+    & h2 {
+        font-size: 26rem;
     }
 
     &__quote {
@@ -39,7 +43,7 @@
         &Points {
 
             & li {
-                padding-left: 2.4rem;
+                padding-left: 8rem;
 
                 &:before {
                     content: "-";
