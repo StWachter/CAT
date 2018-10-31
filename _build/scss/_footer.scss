@@ -5,11 +5,16 @@
 /* --------------------------------------------------------------------------- */
 .footer {
     display: flex;
-    justify-content: flex-end;
-    font-size: 1.2rem;
+    justify-content: space-between;
+    font-size: 1.4rem;
     color: $colorSecondary;
     text-transform: uppercase;
 	@media (max-width: 320px) {}
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     & li {
         padding-left: 2rem;

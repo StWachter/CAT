@@ -4,7 +4,7 @@
 /*
 /* --------------------------------------------------------------------------- */
 .hero {
-    height: 100vh;
+    height: 80vh;
     position: relative;
 	@media (max-width: 320px) {}
 
@@ -31,12 +31,12 @@
     }
 
     &__text {
-        width: 45%;
+        width: 70%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        color: $colorSecondary;
+        color: $colorTertiary;
 
 
         /*animation slideFade*/
@@ -51,7 +51,6 @@
         }
 
         & span {
-            background-color: $colorPrimary;
         }
 
         & div {
@@ -60,12 +59,14 @@
     }
 
     &__h1 {
-        font-size: 5rem;
+        font-size: 8rem;
         font-family: $fontSecondary;
+        font-weight: 700;
 
         @media (max-width: 600px) {
-            font-size: 3.5rem;
+            font-size: 5rem;
         }
+    }
 
     &__h2 {
         font-size: 3rem;
@@ -77,6 +78,7 @@
 
     &__button {
         padding: 1.5rem 2.5rem;
+        margin-top: 2rem;
         border: 2px solid $colorPrimary;
         background: none;
         text-transform: uppercase;

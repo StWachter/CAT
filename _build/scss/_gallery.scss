@@ -4,19 +4,65 @@
 /*
 /* --------------------------------------------------------------------------- */
 .gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 60rem auto;
+    grid-gap: 5%;
+    max-width: 100%;
+
+    &--angebot {
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+    }
+
 	@media (max-width: 320px) {}
 
     &__image {
-        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+        &--angebot {
+            object-position: 100% 50%;
+        }
 
         &Wrapper {
-            flex: 1.5;
-            padding: 3rem;
+            position: relative;
+        }
+    }
 
-            &--small {
-                flex: 0.66625;
-            }
+    &__figureWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        & li {
+            color: $colorSecondary;
+        }
+    }
+
+    & figure {
+        font-family: $fontSecondary;
+        color: $colorSecondary;
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    &__description {
+        & li {
+            padding: 0.5rem 0;
+        }
+
+        & a {
+            text-decoration: underline;
         }
     }
 }

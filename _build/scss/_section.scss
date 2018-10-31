@@ -7,9 +7,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     width: 85%;
 
+    & h1, h2, h3 {
+        font-family: $fontSecondary;
+        width: 95%;
+        text-align: center;
+    }
+
+    &__quote {
+        border-top: 1px solid;
+        margin-top: 2rem;
+    }
 
 	@media (max-width: 850px) {
         width: 100%;
@@ -22,6 +31,23 @@
 
     &__wrapper {
         background: rgba(255,255,255,0.85);
+    }
+
+    &__list {
+        width: 100%;
+
+        &Points {
+
+            & li {
+                padding-left: 2.4rem;
+
+                &:before {
+                    content: "-";
+                    padding-right: 0.8rem;
+                }
+            }
+
+        }
     }
 
 }
