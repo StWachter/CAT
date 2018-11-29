@@ -9,6 +9,10 @@
     justify-content: center;
     width: 75%;
 
+    &--wide {
+        width: 100%;
+    }
+
     & h1, h2, h3 {
         font-family: $fontSecondary;
         width: 95%;
@@ -16,11 +20,17 @@
     }
 
     &__quote {
-        border-top: 1px solid;
+        border-top: 1px solid $colorQuartery;
         margin-top: 2rem;
+
+        & h2 {
+          @media (max-width: 800px) {
+                font-size: 20px;
+          }
+        }
     }
 
-	@media (max-width: 850px) {
+	  @media (max-width: 850px) {
         width: 100%;
     }
 
@@ -31,6 +41,10 @@
 
     &__wrapper {
         background: rgba(255,255,255,0.85);
+        height: 100%;
+        @media (max-width: 1100px) {
+            padding-top: 8rem;
+        }
     }
 
     &__list {
@@ -41,8 +55,13 @@
             & li {
                 padding-left: 8rem;
 
+                @media (max-width: 600px) {
+                    padding-left: 3rem;
+                }
+
                 &:before {
                     content: "|";
+                    color: $colorQuartery;
                     padding-right: 0.8rem;
                 }
             }

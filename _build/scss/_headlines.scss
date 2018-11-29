@@ -13,15 +13,21 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, .h1 {
-
+	@media (max-width: 800px) {
+		font-size: 1.6em;
+	}
 }
 
 h2, .h2 {
-
+	@media (max-width: 800px) {
+		font-size: 1.4em;
+	}
 }
 
 h3, .h3 {
-
+    @media (max-width: 800px) {
+        font-size: 1.2em;
+    }
 }
 
 h4, .h4 {

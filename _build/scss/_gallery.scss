@@ -6,16 +6,41 @@
 .gallery {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 60rem auto;
+    grid-template-rows: 60rem;
     grid-gap: 5%;
     max-width: 100%;
 
-    &--angebot {
-        grid-template-columns: 45% 45%;
-        grid-gap: 10%;
+    @media (max-width: 900px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 40rem 40rem 40rem;
     }
 
-	@media (max-width: 320px) {}
+    &--kontakt {
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+        min-height: 70vh;
+        @media (max-width: 900px) {
+            grid-template-rows: auto;
+        }
+
+        @media (max-width: 600px) {
+            grid-gap: 0;
+        }
+
+    }
+
+    &--angebot {
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+        min-height: 70vh;
+
+        @media (max-width: 1240px) {
+            min-height: 90vh;
+        }
+        @media (max-width: 640px) {
+            grid-template-rows: 40rem 50rem 40rem;
+        }
+    }
 
     &__image {
         object-fit: cover;
@@ -25,9 +50,22 @@
         &--angebot {
             object-position: 100% 50%;
         }
+        &--angebot-var {
+            object-position: 100% 60%;
+        }
+
+        &--kontakt {
+            object-position: 0% 40%;
+        }
 
         &Wrapper {
             position: relative;
+
+            &--order {
+                @media (max-width: 900px) {
+                    order: 2;
+                }
+            }
         }
     }
 
@@ -39,22 +77,26 @@
         bottom: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        padding: 2rem;
+        padding: 4rem;
 
         & li {
             color: $colorSecondary;
+            background: rgba(0,0,0,0.1);
         }
     }
 
-    & figure {
+    &__figure {
         font-family: $fontSecondary;
         color: $colorSecondary;
         font-size: 3.6rem;
         font-weight: 900;
         text-align: center;
-        background: rgba(0,0,0,0.1);
+
+        &--black {
+            color: $colorTertiary;
+        }
     }
 
     &__description {
