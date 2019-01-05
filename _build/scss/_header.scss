@@ -32,6 +32,10 @@
 
     &__logo {
         font-weight: 600;
+        @media (max-width: 800px) {
+            margin-right: 60px;
+        }
+
     }
 
     & a {

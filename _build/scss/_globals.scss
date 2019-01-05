@@ -19,7 +19,7 @@
 
 // body
 body {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: $colorTertiary;
     overflow-x: hidden;
 }
@@ -36,7 +36,7 @@ a {
 	text-decoration: none;
 	transition: all .4s;
 	color: inherit;
-    opacity: 0.5;
+    opacity: 0.8;
     &:hover {
         opacity: 1;
     }

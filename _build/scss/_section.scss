@@ -45,6 +45,15 @@
         @media (max-width: 1100px) {
             padding-top: 8rem;
         }
+
+        &--padding {
+
+            padding-top: 3rem;
+
+            @media (max-width: 600px) {
+                padding-top: 10rem;
+            }
+        }
     }
 
     &__list {

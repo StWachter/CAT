@@ -19,6 +19,9 @@
         grid-template-columns: 49% 49%;
         grid-gap: 2%;
         min-height: 70vh;
+        @media (max-width: 1500px) {
+            grid-template-rows: auto;
+        }
         @media (max-width: 900px) {
             grid-template-rows: auto;
         }
@@ -39,6 +42,9 @@
         }
         @media (max-width: 640px) {
             grid-template-rows: 40rem 50rem 40rem;
+        }
+        @media (max-width: 400px) {
+            grid-template-rows: auto;
         }
     }
 
@@ -100,6 +106,7 @@
     }
 
     &__description {
+
         & h3 {
             text-transform: uppercase;
         }
