@@ -13,8 +13,13 @@
         width: 100%;
     }
 
-    & h1, h3 {
+    & h1 {
         font-family: $fontSecondary;
+        width: 95%;
+        text-align: center;
+    }
+
+    & h2, h3 {
         width: 95%;
         text-align: center;
     }
