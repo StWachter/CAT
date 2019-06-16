@@ -38,10 +38,8 @@
         @media (max-width: 1240px) {
             min-height: 90vh;
         }
-        @media (max-width: 640px) {
-            grid-template-rows: 40rem 50rem 40rem;
-        }
-        @media (max-width: 400px) {
+
+        @media (max-width: 900px) {
             grid-template-rows: auto;
         }
     }
