@@ -1,0 +1,44 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	notice
+/*
+/* --------------------------------------------------------------------------- */
+.notice {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+
+    &__inner {
+        background-color: #ebc334;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 3rem;
+        position: relative;
+        top: 40vh;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__button {
+        margin-top: 2rem;
+        font-size: .8em;
+        padding: 1rem 2rem;
+        display: inline-block;
+        border: 1px solid $colorTertiary;
+        text-decoration: none!important;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $colorTertiary;
+            color: #ebc334;
+        }
+    }
+
+
+	@media (max-width: 320px) {}
+}

@@ -10,9 +10,11 @@
     flex-wrap: wrap;
     text-transform: uppercase;
     position: relative;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
-	@media (max-width: 320px) {}
+	@media (max-width: 800px) {
+        padding: 1rem 0;
+    }
 
     &__wrapper {
         position: fixed;
@@ -103,7 +105,7 @@
         @media (max-width: 800px){
             position: absolute;
             right: 0;
-            top: 2.4rem;
+            top: 1.3rem;
         }
 
         &:hover {
@@ -120,6 +122,47 @@
             @media (max-width: 800px){
                 display: block;
             }
+        }
+    }
+
+    &__topLine {
+        background-color: #fff;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem 0;
+        font-size: .8em;
+
+        &Title {
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+
+        &Info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &Link {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 2rem;
+
+            &:hover .header__contactIcon {
+                fill: $colorQuartery;
+            }
+        }
+
+        &Icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+            margin-right: .5em;
+            fill: currentcolor;
         }
     }
 }

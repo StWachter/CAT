@@ -6,16 +6,15 @@
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.4rem;
-    color: $colorSecondary;
     text-transform: uppercase;
     position: relative;
-
-
-	@media (max-width: 320px) {}
+    color: $colorTertiary;
 
     &__list {
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -24,6 +23,16 @@
     }
 
     &__wrapper {
-        background-color: $colorTertiary;
+        background-color: $colorPrimary;
+    }
+
+    &__logo {
+        height: 4rem;
+        width: 9.16rem;
+        display: block;
+
+        &Wrapper {
+            margin-left: 2rem;
+        }
     }
 }

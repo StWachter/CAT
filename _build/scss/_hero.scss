@@ -4,7 +4,8 @@
 /*
 /* --------------------------------------------------------------------------- */
 .hero {
-    height: 85vh;
+    height: 100vh;
+    min-height: 600px;
     position: relative;
 	@media (max-width: 320px) {}
 
@@ -62,6 +63,7 @@
         font-size: 8rem;
         font-family: $fontSecondary;
         font-weight: 700;
+        line-height: 1.2;
 
         @media (max-width: 900px) {
             font-size: 5rem;
