@@ -31,16 +31,12 @@
     }
 
     &--angebot {
+        display: grid;
         grid-template-columns: 49% 49%;
         grid-gap: 2%;
-        min-height: 70vh;
-
-        @media (max-width: 1240px) {
-            min-height: 90vh;
-        }
 
         @media (max-width: 900px) {
-            grid-template-rows: auto;
+            grid-template-columns: 100%;
         }
     }
 
@@ -112,9 +108,17 @@
 
         & h3 {
             text-transform: uppercase;
+            min-height: 80px;
+            display: block;
+            margin-bottom: 1rem;
+
+            @media (max-width: 900px) {
+                min-height: 0;
+            }
         }
-        & li {
+        & span {
             padding: 0.5rem 0;
+            display: block;
         }
 
         & a {

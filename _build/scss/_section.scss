@@ -9,6 +9,10 @@
     justify-content: center;
     width: 75%;
 
+    a {
+        text-decoration: underline;
+    }
+
     &--wide {
         width: 100%;
     }
@@ -20,8 +24,9 @@
     }
 
     & h2, h3 {
-        width: 95%;
+        width: 100%;
         text-align: center;
+        margin: 0 auto;
     }
 
     &__quote {

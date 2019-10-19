@@ -47,6 +47,10 @@ p {
     line-height: 1.4;
 }
 
+.highlight {
+	color: $colorQuartery;
+}
+
 // container
 .container {
     max-width: 1440px;
@@ -68,6 +72,7 @@ p {
 
 .colored {
     color: $colorQuartery;
+	display: inline!important;
 }
 
 .underline {

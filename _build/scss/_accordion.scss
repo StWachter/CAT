@@ -1,0 +1,54 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	accordion
+/*
+/* --------------------------------------------------------------------------- */
+.accordion {
+
+    &:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    &.active {
+        .accordion__icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__button {
+        padding: 1.5rem 0;
+        font-size: 2rem;
+        border-bottom: 1px solid $colorQuartery;
+        cursor: pointer;
+    }
+
+    &__icon {
+        fill: $colorQuartery;
+        width: 15px;
+        height: 15px;
+        margin-right: 1.5rem;
+        position: relative;
+        bottom: 2px;
+        transition: all .3s ease;
+
+        &Download {
+            fill: $colorQuartery;
+            width: 15px;
+            height: 15px;
+            margin-right: 1.5rem;
+            position: relative;
+            bottom: 2px;
+        }
+    }
+
+    &__content {
+        display: none;
+        padding-top: 1.5rem;
+        padding-left: 3.3rem;
+
+        @media (max-width: 900px) {
+            padding-left: 0;
+        }
+    }
+	@media (max-width: 320px) {}
+}

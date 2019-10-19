@@ -78,6 +78,16 @@ $(document).ready(function() {
         });
     }
 
+    // * * * * * * * * * * * * * * * * * * * * * * * * *
+    // * accordion
+    // *
+    // *
+    $(".js-accordion-button").click(function(){
+        $(this).parents(".js-accordion-parent").toggleClass("active").find(".js-accordion-content").slideToggle();
+        $(this).parents(".js-accordion-parent").siblings().removeClass("active").find(".js-accordion-content").slideUp();
+    });
+
+
 
 
 

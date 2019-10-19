@@ -1,2 +1,5 @@
 # ignore gulp_module files
 node_modules/
+
+package.json
+package-lock.json
