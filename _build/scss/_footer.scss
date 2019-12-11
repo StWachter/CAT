@@ -11,11 +11,16 @@
     text-transform: uppercase;
     position: relative;
     color: $colorTertiary;
+    margin-top: auto;
 
     &__list {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        &:last-of-type {
+            justify-content: flex-end;
+        }
     }
 
     & li {

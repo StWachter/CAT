@@ -88,6 +88,14 @@ $(document).ready(function() {
     });
 
 
+    // * * * * * * * * * * * * * * * * * * * * * * * * *
+    // * ie11 Fix SVG + opbject fit
+    // *
+    // *
+    svg4everybody();
+    objectFitImages();
+
+
 
 
 

@@ -88,4 +88,16 @@
         }
     }
 
+    &__logo {
+        height: 8rem;
+        width: 18.32;
+        display: block;
+
+        &Wrapper {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+    }
+
 }
