@@ -18,10 +18,10 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 #  Redirect to SSL (http://domain.de -> https://domain.de)
 # ----------------------------------------------------------------------
 
-#RewriteCond %{SERVER_PORT} !^443
-#RewriteCond %{HTTP_HOST} !\.local$
-#RewriteCond %{HTTP_HOST} !\.quadro-hosting\.de$
-#RewriteRule (.*) https://example-domain-please-change.com/$1 [R=301,L]
+RewriteCond %{SERVER_PORT} !^443
+RewriteCond %{HTTP_HOST} !\.local$
+RewriteCond %{HTTP_HOST} !\.quadro-hosting\.de$
+RewriteRule (.*) https://catharinaguth.com/$1 [R=301,L]
 
 
 
