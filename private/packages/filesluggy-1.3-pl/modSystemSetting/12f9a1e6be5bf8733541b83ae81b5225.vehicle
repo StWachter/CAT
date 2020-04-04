@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ec9f9120de775269a30030a9c79a18bf',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '12f9a1e6be5bf8733541b83ae81b5225',
+  'native_key' => 'filesluggy.enc',
+  'object' => '{"key":"filesluggy.enc","value":"UTF-8","xtype":"charset","namespace":"filesluggy","area":"fs_encoding","editedon":null}',
+);

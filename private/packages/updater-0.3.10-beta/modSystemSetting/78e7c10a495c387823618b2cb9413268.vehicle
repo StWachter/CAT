@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'updater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '81440c098a23dce35d18acb4ba13d009',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '78e7c10a495c387823618b2cb9413268',
+  'native_key' => 'updater.core_notifications_mail',
+  'object' => '{"key":"updater.core_notifications_mail","value":"","xtype":"textfield","namespace":"updater","area":"(2) Notifications: Core","editedon":null}',
+);

@@ -1,0 +1,41 @@
+Redactor 3.0.0-rc2
+------------------
+Released on 2020-01-16
+
+- Don't load English translation file to avoid emptying plugin translation strings (alignment, clips) [S21859]
+- Fix z-index issues with the MODX media browser, by not overriding the z-index to make it appear in front of Redactor-built modals but closing the initiating Redactor modal window instead. [S21859]
+- Add support for shift+tab to outdent within lists [B31]
+- Fix replaced images not being saved [B31]
+- Restore fixed toolbar to normal toolbar when opening full screen mode [#492]
+- Split autoparse options in the configurator to a separate tab
+- Add options for resource links: limit to current context, include introtext [S21862]
+- Make directory depth for the simple browser configurable
+- When adding a link, the resource search will now automatically query for the selected text
+- Fix link styles not working correctly with multiple classnames
+- Fix image styles not preselecting current styles when it has multiple classnames
+
+Redactor 3.0.0-rc1
+------------------
+Released on 2020-01-14
+
+Welcome to Redactor 3. A refreshed and modernised take on the rich text editor.
+
+This is a major release and paid upgrade for users of Redactor 2. Learn more in the release announcement: https://modmore.com/blog/2020/redactor-3/
+
+Some of the highlights in Redactor 3:
+
+- Configuration is now managed with Configuration Sets. After installation, browse to Extras > Redactor Configuration to start. On upgrade, your previous settings will be (as much as possible) migrated to the new format, including context-specific overrides
+- Much simpler media manager is now included by default. You can also use the standard MODX browser, or both!
+- New input type for ContentBlocks allowing you to choose a configuration set per field
+- You can now choose a configuration set per template
+- New `divider` button lets you visually separate toolbar buttons
+- Different themes are now supported, including the new default, a Redactor 2-inspired theme, and one filled with rainbows
+- New properties plugin to set IDs and classes on any block element
+- Improved core editing experience with better cleanup and some long-standing issues resolved
+- redactor.css setting now support a comma separated list of CSS files rather than just one
+- Sanitising file names now supports transliteration
+- New Image Styles option lets you define classes that can be added to an image
+- Experimental support for Fred
+- Redactor plugins from Imperavi, which often do not ship with a translation, can now be translated through the MODX lexicon system
+
+Powered by Imperavi's redactor.js v3.3.2.

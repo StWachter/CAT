@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9def977973b61e3bc5d332cc964751ed',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '39be747cc0903a4718028d4911196a09',
+  'native_key' => 'redactor.preSpaces',
+  'object' => '{"key":"redactor.preSpaces","value":"4","xtype":"textfield","namespace":"redactor","area":"Markup","editedon":1505381885}',
+);

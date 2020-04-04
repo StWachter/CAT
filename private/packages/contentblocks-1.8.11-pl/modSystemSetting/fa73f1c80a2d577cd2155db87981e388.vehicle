@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '599df3d9c9cd00a484f248808d254590',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fa73f1c80a2d577cd2155db87981e388',
+  'native_key' => 'contentblocks.image.source',
+  'object' => '{"key":"contentblocks.image.source","value":1,"xtype":"modx-combo-source","namespace":"contentblocks","area":"Input: Image","editedon":1563872810}',
+);

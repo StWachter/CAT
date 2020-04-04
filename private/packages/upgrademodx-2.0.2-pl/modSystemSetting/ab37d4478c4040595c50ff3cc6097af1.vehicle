@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8d22864585de7e3bb0de896a2685380d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ab37d4478c4040595c50ff3cc6097af1',
+  'native_key' => 'ugm_version_list_path',
+  'object' => '{"key":"ugm_version_list_path","value":"{core_path}cache\\/upgrademodx\\/","xtype":"textfield","namespace":"upgrademodx","area":"Widget","editedon":null,"name":"Versionlist Path","description":"Path to versionlist file (minus the filename -- should end in a slash); Default: {core_path}cache\\/upgrademodx\\/"}',
+);

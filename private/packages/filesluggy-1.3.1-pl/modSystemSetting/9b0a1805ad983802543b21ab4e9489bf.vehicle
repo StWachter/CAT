@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6fa9d7d07818e4ba5a22ea0d9eadbd70',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9b0a1805ad983802543b21ab4e9489bf',
+  'native_key' => 'filesluggy.charset_iconv',
+  'object' => '{"key":"filesluggy.charset_iconv","value":"US-ASCII\\/\\/TRANSLIT","xtype":"textfield","namespace":"filesluggy","area":"fs_encoding","editedon":null}',
+);

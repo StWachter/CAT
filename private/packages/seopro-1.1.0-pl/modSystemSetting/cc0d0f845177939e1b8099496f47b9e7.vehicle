@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'seopro',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '56e0d5fa98c70b8b6d72ba9d670a6408',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'cc0d0f845177939e1b8099496f47b9e7',
+  'native_key' => 'seopro.usesitename',
+  'object' => '{"key":"seopro.usesitename","value":"1","xtype":"combo-boolean","namespace":"seopro","area":"general","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '63f9658db2a400696009d9ed297f0a9b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '29e8b3802e72508f65e8c0544b4e19be',
+  'native_key' => 'redactor.scrollTarget',
+  'object' => '{"key":"redactor.scrollTarget","value":"","xtype":"textarea","namespace":"redactor","area":"Editor","editedon":1501049980}',
+);

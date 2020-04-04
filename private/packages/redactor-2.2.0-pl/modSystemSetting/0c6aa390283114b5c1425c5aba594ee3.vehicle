@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2aa66bf7148de5f56dcd84e0019971aa',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0c6aa390283114b5c1425c5aba594ee3',
+  'native_key' => 'redactor.imageResizable',
+  'object' => '{"key":"redactor.imageResizable","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1464213069}',
+);

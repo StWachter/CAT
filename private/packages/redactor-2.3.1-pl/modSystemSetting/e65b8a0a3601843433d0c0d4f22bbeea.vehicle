@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '801422e4db1d93cb24cff5aa43f72132',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e65b8a0a3601843433d0c0d4f22bbeea',
+  'native_key' => 'redactor.removeEmptyTags',
+  'object' => '{"key":"redactor.removeEmptyTags","value":"p","xtype":"textfield","namespace":"redactor","area":"Markup","editedon":1505381885}',
+);

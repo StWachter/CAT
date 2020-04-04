@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ec9383627b22d99cbebf0a92ef782265',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '43ebe0cf6c382d497c47751b77068229',
+  'native_key' => 'redactor.plugin_zoom',
+  'object' => '{"key":"redactor.plugin_zoom","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Plugin","editedon":1550823323}',
+);

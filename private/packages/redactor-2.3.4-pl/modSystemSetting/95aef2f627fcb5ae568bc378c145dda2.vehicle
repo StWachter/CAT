@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ecb97338f2deba1c86441e0fa393f753',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '95aef2f627fcb5ae568bc378c145dda2',
+  'native_key' => 'redactor.tabindex',
+  'object' => '{"key":"redactor.tabindex","value":0,"xtype":"numberfield","namespace":"redactor","area":"Editor","editedon":1550823323}',
+);

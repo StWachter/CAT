@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '94f5b877753242f86ce82a19caa9256e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '08bd4def73ad5081190e49ee22fa30d7',
+  'native_key' => 'contentblocks.tinyrte_lazy_init',
+  'object' => '{"key":"contentblocks.tinyrte_lazy_init","value":false,"xtype":"modx-combo-boolean","namespace":"contentblocks","area":"Core","editedon":1563872810}',
+);

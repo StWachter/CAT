@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '18ee5a0cb0c6b0295aaa66873db9135d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8019023f6614d0a549fbe7e486d6d3b0',
+  'native_key' => 'redactor.speechRate',
+  'object' => '{"key":"redactor.speechRate","value":1,"xtype":"numberfield","namespace":"redactor","area":"Advanced","editedon":1505381885}',
+);

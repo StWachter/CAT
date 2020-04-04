@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '299117e5f02dfa67077d3c104e9ec2d8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7bb8cf9ce67dd30953f1055c326db33f',
+  'native_key' => 'redactor.plugin_eureka',
+  'object' => '{"key":"redactor.plugin_eureka","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1535007464}',
+);

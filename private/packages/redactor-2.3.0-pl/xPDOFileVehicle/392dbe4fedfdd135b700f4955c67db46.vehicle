@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'redactor-2.3.0-pl/xPDOFileVehicle/392dbe4fedfdd135b700f4955c67db46/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'modmore',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"redactor-2.3.0-pl\\/xPDOFileVehicle\\/392dbe4fedfdd135b700f4955c67db46.resolver.resolver","name":"resolver"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '73dc744cbb77ca5fa334b2748300bbe6',
+  'package' => '',
+  'signature' => '392dbe4fedfdd135b700f4955c67db46',
+  'native_key' => '73dc744cbb77ca5fa334b2748300bbe6',
+);

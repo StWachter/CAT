@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '43d23dee5183b40d9be78f237020940b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '39cab893cb4191d591b73500fa4dcf2b',
+  'native_key' => 'redactor.limiter',
+  'object' => '{"key":"redactor.limiter","value":150,"xtype":"numberfield","namespace":"redactor","area":"Editor","editedon":1464213069}',
+);

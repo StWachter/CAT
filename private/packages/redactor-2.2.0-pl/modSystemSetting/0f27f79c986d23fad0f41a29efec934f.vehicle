@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f3ce8f13a8283d88dad8dffdba8feeb5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0f27f79c986d23fad0f41a29efec934f',
+  'native_key' => 'redactor.lang',
+  'object' => '{"key":"redactor.lang","value":"","xtype":"textfield","namespace":"redactor","area":"Internationalisation","editedon":1464213069}',
+);

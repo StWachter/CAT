@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3513dd80d3657eb7b40a0e24b8484d11',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '626d3313e0c8541dd1fb21a40d399551',
+  'native_key' => 'redactor.focusEnd',
+  'object' => '{"key":"redactor.focusEnd","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1535007464}',
+);

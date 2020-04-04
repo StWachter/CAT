@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bc638a755ca2c0b5566c2910067ec783',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0997f1db68f228277c620868eb8e8b68',
+  'native_key' => 'contentblocks.accepted_resource_types',
+  'object' => '{"key":"contentblocks.accepted_resource_types","value":"modDocument,mgResource,Article,CollectionContainer,GridContainer,GoodNewsResourceContainer,GoodNewsResourceMailing,scCategoryResource,scProductResource,Location","xtype":"textfield","namespace":"contentblocks","area":"Core","editedon":1560417564}',
+);

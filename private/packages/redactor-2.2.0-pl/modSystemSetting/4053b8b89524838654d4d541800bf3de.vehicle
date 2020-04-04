@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '812552e0600e59fd6f0dcbd015b39ff2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4053b8b89524838654d4d541800bf3de',
+  'native_key' => 'redactor.minHeight',
+  'object' => '{"key":"redactor.minHeight","value":200,"xtype":"numberfield","namespace":"redactor","area":"Editor","editedon":1464213069}',
+);

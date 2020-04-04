@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'clientconfig',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'deb32bc76c8d227771e621eb02ecad5b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0b5c72d879acb84a642b65744b1fe7c0',
+  'native_key' => 'clientconfig.vertical_tabs',
+  'object' => '{"key":"clientconfig.vertical_tabs","value":false,"xtype":"combo-boolean","namespace":"clientconfig","area":"Default","editedon":null}',
+);

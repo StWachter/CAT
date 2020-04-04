@@ -1,0 +1,8 @@
+id: 12
+name: 'Assets Version'
+description: ''
+type: snippet
+content: increaseAssetsVersion
+namespace: core
+name_trans: 'Assets Version'
+description_trans: ''

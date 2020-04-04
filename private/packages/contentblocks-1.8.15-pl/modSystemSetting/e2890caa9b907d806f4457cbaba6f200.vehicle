@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0390c71600aa420311d79dd72d31c8b7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e2890caa9b907d806f4457cbaba6f200',
+  'native_key' => 'contentblocks.crop_png_compression',
+  'object' => '{"key":"contentblocks.crop_png_compression","value":"9","xtype":"textfield","namespace":"contentblocks","area":"Input: Image","editedon":1585994253}',
+);

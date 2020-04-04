@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'adf1a82ff6edf37e2d2637f36fee861f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '64601749569b6cafb4ef8ee8f7affd03',
+  'native_key' => 'ugm_github_token',
+  'object' => '{"key":"ugm_github_token","value":"","xtype":"textfield","namespace":"upgrademodx","area":"GitHub","editedon":null,"name":"GitHub Token","description":"Github token - available from your GitHub profile"}',
+);

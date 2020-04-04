@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a83c897b582861df1e0371db6c0d9884',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3cf41aec9fefd85b4d685a925a847c56',
+  'native_key' => 'redactor.imageTabLink',
+  'object' => '{"key":"redactor.imageTabLink","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1563872937}',
+);

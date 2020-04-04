@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '95001d2bb1161a515a95002df0a885fa',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9002f7ff42be6e5699b887df839cd684',
+  'native_key' => 'redactor.dynamicThumbs',
+  'object' => '{"key":"redactor.dynamicThumbs","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1464213069}',
+);

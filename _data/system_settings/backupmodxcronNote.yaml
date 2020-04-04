@@ -1,0 +1,4 @@
+key: backupmodx.cronNote
+xtype: textarea
+namespace: backupmodx
+area: Cron

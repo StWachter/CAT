@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '02d4429c0295a837e8bbd90be467171d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7bee64e91de00c948298dfac05396d46',
+  'native_key' => 'redactor.sanitizePattern',
+  'object' => '{"key":"redactor.sanitizePattern","value":"\\/([[:alnum:]_\\\\.-]*)\\/","xtype":"textfield","namespace":"redactor","area":"Advanced","editedon":1494496440}',
+);

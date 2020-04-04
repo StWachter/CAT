@@ -1,0 +1,32 @@
+id: 6
+source: 2
+name: footer
+description: ''
+category: Template
+properties: 'a:0:{}'
+
+-----
+
+<div class="footer__wrapper padding-top-1 padding-bottom-1">
+    <div class="container">
+        <div class="footer">
+            <div class="footer__list">
+                [[pdoMenu?
+                    &parents=`0`
+                    &resources=`1,12,13,14`
+                    &level=`0`
+                ]]
+            </div>
+            <div class="footer__list">
+                [[pdoMenu?
+                    &parents=`0`
+                    &resources=`15,16`
+                    &level=`0`
+                ]]
+                <div class="footer__logoWrapper">
+                    <a href="https://www.mbsr-verband.de/"><img src="[[++project.assets_url]]uploads/verband.png" alt="" class="footer__logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

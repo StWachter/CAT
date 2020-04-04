@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '74dd3d8846f444014e9155f2b2dca0a8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd786ad87c784a001b6688f4c0474f44b',
+  'native_key' => 'redactor.textexpander',
+  'object' => '{"key":"redactor.textexpander","value":"","xtype":"textarea","namespace":"redactor","area":"Advanced","editedon":1501049980}',
+);

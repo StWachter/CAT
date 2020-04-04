@@ -1,0 +1,3 @@
+name: backupmodx
+path: '{core_path}components/backupmodx/'
+assets_path: '{assets_path}components/backupmodx/'

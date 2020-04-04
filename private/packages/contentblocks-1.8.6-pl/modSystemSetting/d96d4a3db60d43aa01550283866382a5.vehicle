@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bdc85d8c17c1be2f77125c1b173f66ba',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd96d4a3db60d43aa01550283866382a5',
+  'native_key' => 'contentblocks.code.theme',
+  'object' => '{"key":"contentblocks.code.theme","value":"chrome","xtype":"textfield","namespace":"contentblocks","area":"Input: Code","editedon":1548412066}',
+);

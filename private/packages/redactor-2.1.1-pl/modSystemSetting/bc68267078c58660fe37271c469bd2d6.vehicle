@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '961bc570c16a501a55e08bef9916ad63',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bc68267078c58660fe37271c469bd2d6',
+  'native_key' => 'redactor.formattingTags',
+  'object' => '{"key":"redactor.formattingTags","value":"p,blockquote,pre,h1,h2,h3,h4","xtype":"textfield","namespace":"redactor","area":"Toolbar","editedon":1461341993}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a2c46b7286764f2fa3dfe54b01c57163',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ebd8749e12af851f5e514d83e3944736',
+  'native_key' => 'contentblocks.custom_icon_path',
+  'object' => '{"key":"contentblocks.custom_icon_path","value":"","xtype":"textfield","namespace":"contentblocks","area":"Core","editedon":1579190111}',
+);

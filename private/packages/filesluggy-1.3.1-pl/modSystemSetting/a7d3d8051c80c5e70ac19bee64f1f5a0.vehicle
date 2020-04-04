@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '77a676b91551ffe306a6dcf39f9568bb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a7d3d8051c80c5e70ac19bee64f1f5a0',
+  'native_key' => 'filesluggy.regexp',
+  'object' => '{"key":"filesluggy.regexp","value":"\\/[^\\\\.A-Za-z0-9 _-]\\/","xtype":"textfield","namespace":"filesluggy","area":"fs_encoding","editedon":null}',
+);

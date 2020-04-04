@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd09caa684274006a2f469070c651dd07',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2d04cc015d1c65b9e20e01da224442e0',
+  'native_key' => 'redactor.buttonsHideOnMobile',
+  'object' => '{"key":"redactor.buttonsHideOnMobile","value":"","xtype":"textfield","namespace":"redactor","area":"Toolbar","editedon":1461341993}',
+);

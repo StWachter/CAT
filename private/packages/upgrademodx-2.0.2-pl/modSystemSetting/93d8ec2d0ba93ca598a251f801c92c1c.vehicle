@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ad7633fd2096199b58d1b1e516acd133',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '93d8ec2d0ba93ca598a251f801c92c1c',
+  'native_key' => 'ugm_language',
+  'object' => '{"key":"ugm_language","value":"en","xtype":"textfield","namespace":"upgrademodx","area":"Form","editedon":null,"name":"Language","description":"Two-letter language code for language to use; default: en"}',
+);

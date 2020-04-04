@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '669e3a56e14f14e1b8a6d062d383caee',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '858376d9a04cd34c143d093bc18a9bba',
+  'native_key' => 'redactor.linkSize',
+  'object' => '{"key":"redactor.linkSize","value":50,"xtype":"numberfield","namespace":"redactor","area":"Editor","editedon":1521814388}',
+);

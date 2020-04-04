@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a653429ae0aae9c7c83e5d7e6731a2f1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '74f0280b29980ec7cdc0472485f5ee4f',
+  'native_key' => 'redactor.linkTooltip',
+  'object' => '{"key":"redactor.linkTooltip","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1494496440}',
+);

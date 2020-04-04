@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '15091977974edc6f1b0e6acfa867d8ae',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '94f0677d314be55985ce5566e6488805',
+  'native_key' => 'redactor.buttonFullScreen',
+  'object' => '{"key":"redactor.buttonFullScreen","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Toolbar","editedon":1521814388}',
+);

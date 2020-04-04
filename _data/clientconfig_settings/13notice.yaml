@@ -1,0 +1,7 @@
+id: 13
+key: notice
+label: Störertext
+xtype: richtext
+description: ''
+value: "<p>Derzeit biete ich Online - Alternativen in der Gruppe oder einzeln an. Bei Interesse bitte eine Nachricht an: <a href=\"mailto:kontakt@catharinaguth.de\">kontakt@catharinaguth.de</a></p><p>                Wünsche Zuversicht und Gelassenheit, Catharina Guth</p>\n\n"
+group: 4

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8d2369ce2b041b37e0cd6ff6ffbcb04e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6cbd717a33d80dff7319294e030033fe',
+  'native_key' => 'redactor.tabifier',
+  'object' => '{"key":"redactor.tabifier","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1461341993}',
+);

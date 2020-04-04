@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4db9faefa0bbc68539040fa5b357a4f5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '82129dc47cba8c1b457d663f33efcace',
+  'native_key' => 'redactor.direction',
+  'object' => '{"key":"redactor.direction","value":"ltr","xtype":"textfield","namespace":"redactor","area":"Internationalisation","editedon":1550823323}',
+);

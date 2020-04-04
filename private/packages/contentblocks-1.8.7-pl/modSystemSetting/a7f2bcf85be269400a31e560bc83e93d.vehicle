@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cfc611796b250662218c3d3dfe4af029',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a7f2bcf85be269400a31e560bc83e93d',
+  'native_key' => 'contentblocks.sanitize_pattern',
+  'object' => '{"key":"contentblocks.sanitize_pattern","value":"\\/([[:alnum:]_\\\\.-]*)\\/","xtype":"textfield","namespace":"contentblocks","area":"Sanitize","editedon":1550823285}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '05fbd2fd61dc6f8542e10ee562a7e67f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a0a6c3b76a731efb9fc8cbe0e981d0d0',
+  'native_key' => 'redactor.mediasource',
+  'object' => '{"key":"redactor.mediasource","value":"","xtype":"modx-combo-source","namespace":"redactor","area":"Media","editedon":1461341993}',
+);

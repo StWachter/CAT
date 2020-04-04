@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '79b5a224395a00ac3d58edb2d6f5f8e0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '37d83f685cf69de7baba7934e79159d2',
+  'native_key' => 'redactor.clipsJson',
+  'object' => '{"key":"redactor.clipsJson","value":"","xtype":"textarea","namespace":"redactor","area":"Toolbar","editedon":1494496440}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'eaffdd46ec801073f786cdcdb6cb97fb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6818d9aa88deb59046b629a36adc8123',
+  'native_key' => 'redactor.commemorateRebecca',
+  'object' => '{"key":"redactor.commemorateRebecca","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Toolbar","editedon":1550823323}',
+);

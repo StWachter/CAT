@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '17ae08ced36835aa8c887a2447af0f0a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '09923baf6484de26e42f8a3a7ef406ac',
+  'native_key' => 'redactor.convertImageLinks',
+  'object' => '{"key":"redactor.convertImageLinks","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1563872937}',
+);

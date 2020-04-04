@@ -1,5 +1,29 @@
+# ignore backups
+/_backup/*
+/private/export/*
+
+# ignore some MODX core/cache folders
+/private/config/*
+/private/cache/*
+/public/assets/components/phpthumbof/cache/*
+/public/assets/image-cache/*
+/public/assets/uploads/*
+
+
 # ignore gulp_module files
 node_modules/
 
-package.json
-package-lock.json
+
+# ignore setup config files
+setup/config.xml
+setup/config.new.xml
+setup/config.upgrade.xml
+setup/config.upgrade-advanced.xml
+
+
+# ignore some MODX files
+UpgradeMODXWidget.php
+
+
+# ignore mac files
+.DS_Store

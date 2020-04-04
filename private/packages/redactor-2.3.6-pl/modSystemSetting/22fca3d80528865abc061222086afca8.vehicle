@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0e5af28c86c7590b9b1b75c68e87b7ba',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '22fca3d80528865abc061222086afca8',
+  'native_key' => 'redactor.plugin_video',
+  'object' => '{"key":"redactor.plugin_video","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Plugin","editedon":1563872937}',
+);

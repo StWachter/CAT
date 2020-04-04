@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cfc873a81299e07246c71263ced2762b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fda21da119783f8db98141259543f644',
+  'native_key' => 'redactor.baseurls_mode',
+  'object' => '{"key":"redactor.baseurls_mode","value":"relative","xtype":"textfield","namespace":"redactor","area":"Media","editedon":1494496440}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cef7ecb93ea7421dd6979b883fc442f0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '78cebf2869e3258e7be78ea69f13be69',
+  'native_key' => 'redactor.counterWPM',
+  'object' => '{"key":"redactor.counterWPM","value":275,"xtype":"numberfield","namespace":"redactor","area":"Advanced","editedon":1501049980}',
+);

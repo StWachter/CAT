@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c87da18ddff6b9721bd5e2843c258506',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd18d445c076c2269fb2373d38e2bd6eb',
+  'native_key' => 'redactor.uploadcare_locale',
+  'object' => '{"key":"redactor.uploadcare_locale","value":"en","xtype":"textfield","namespace":"redactor","area":"Uploadcare","editedon":1535007464}',
+);

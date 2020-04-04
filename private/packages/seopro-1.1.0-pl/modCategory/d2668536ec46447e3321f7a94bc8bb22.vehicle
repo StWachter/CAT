@@ -1,0 +1,184 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '03fa91c1abd1cf5c326b0e0a6fd6e271' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '850d5b085dc17909ec109ddafbd80e11' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => 'c224d4391138701532b802d75162ec8b',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => 'e9ee4f110c8d759e88eafe4eaeac9daf',
+            ),
+            'b0a76b46e2b37c1d10f09c819287c157' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormSave","priority":0,"propertyset":0}',
+              'guid' => '7cc4f83d123e48da1f4abaaed661f6c8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormSave',
+              ),
+              'signature' => '5278e18fb84ff6078c62c21002072271',
+            ),
+            '9fff3b68bb94b1b279975854220c8e34' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnResourceDuplicate","priority":0,"propertyset":0}',
+              'guid' => '70e672f62df8625e4da5a7f1f9213117',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnResourceDuplicate',
+              ),
+              'signature' => 'ddf1f4dff82254e8424dd1bee148e1a3',
+            ),
+            '76d16090d7ad9900d3b9c917eaf03605' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '3577fc1cc3d9ca9dc879d72069df4749',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => 'ecee348bf56dc6381ecb00bc1f42638e',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"seoPro","description":"SEO optimizing plugin for MODx Revolution.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * The base seoPro snippet.\\n *\\n * @package seopro\\n *\\/\\n$seoPro = $modx->getService(\'seopro\', \'seoPro\', $modx->getOption(\'seopro.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/seopro\\/\') . \'model\\/seopro\\/\', $scriptProperties);\\nif (!($seoPro instanceof seoPro)) {\\n    return \'\';\\n}\\n\\n$disabledTemplates = explode(\',\', $modx->getOption(\'seopro.disabledtemplates\', null, \'0\'));\\n\\nswitch ($modx->event->name) {\\n    case \'OnDocFormRender\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n        \\n        \\n        $currClassKey = $resource->get(\'class_key\');\\n        $strFields = $modx->getOption(\'seopro.fields\', null, \'pagetitle:70,longtitle:70,description:155,alias:2023,menutitle:2023\');\\n        $arrFields = array();\\n        if (is_array(explode(\',\', $strFields))) {\\n            foreach (explode(\',\', $strFields) as $field) {\\n                list($fieldName, $fieldCount) = explode(\':\', $field);\\n                $arrFields[$fieldName] = $fieldCount;\\n            }\\n        } else {\\n            return \'\';\\n        }\\n\\n        $keywords = \'\';\\n        $modx->controller->addLexiconTopic(\'seopro:default\');\\n        if ($mode == \'upd\') {\\n            $url = $modx->makeUrl($resource->get(\'id\'), \'\', \'\', \'full\');\\n            $url = str_replace($resource->get(\'alias\'), \'<span id=\\\\\\"seopro-replace-alias\\\\\\">\' . $resource->get(\'alias\') . \'<\\/span>\', $url);\\n            $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n            if ($seoKeywords) {\\n                $keywords = $seoKeywords->get(\'keywords\');\\n            }\\n        } else {\\n            if ($_REQUEST[\'id\']) {\\n                $url = $modx->makeUrl($_REQUEST[\'id\'], \'\', \'\', \'full\');\\n                $url .= \'\\/<span id=\\\\\\"seopro-replace-alias\\\\\\"><\\/span>\';\\n            } else {\\n                $url = $modx->getOption(\'site_url\') . \'<span id=\\\\\\"seopro-replace-alias\\\\\\"><\\/span>\';\\n            }\\n        }\\n\\n        if ($_REQUEST[\'id\'] == $modx->getOption(\'site_start\')) {\\n            unset($arrFields[\'alias\']);\\n            unset($arrFields[\'menutitle\']);\\n        }\\n\\n\\n        $config = $seoPro->config;\\n        unset($config[\'resource\']);\\n        $modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            seoPro.config = \' . $modx->toJSON($config) . \';\\n            seoPro.config.record = \\"\' . $keywords . \'\\";\\n            seoPro.config.values = {};\\n            seoPro.config.fields = \\"\' . implode(\\",\\", array_keys($arrFields)) . \'\\";\\n            seoPro.config.chars = \' . $modx->toJSON($arrFields) . \'\\n            seoPro.config.url = \\"\' . $url . \'\\";\\n        });\\n    <\\/script>\');\\n\\n        \\/* include CSS and JS*\\/\\n        $version = $modx->getVersionData();\\n        if($version[\'version\'] == 2 && $version[\'major_version\'] == 2){\\n            $modx->regClientCSS($seoPro->config[\'assetsUrl\'] . \'css\\/mgr.css\');\\n        }else{\\n            $modx->regClientCSS($seoPro->config[\'assetsUrl\'] . \'css\\/mgr23.css\');\\n        }\\n        $modx->regClientStartupScript($seoPro->config[\'assetsUrl\'] . \'js\\/mgr\\/seopro.js??v=\' . $modx->getOption(\'seopro.version\', null, \'v1.0.0\'));\\n        $modx->regClientStartupScript($seoPro->config[\'assetsUrl\'] . \'js\\/mgr\\/resource.js?v=\' . $modx->getOption(\'seopro.version\', null, \'v1.0.0\'));\\n\\n        break;\\n\\n    case \'OnDocFormSave\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        if (!$seoKeywords && isset($resource)) {\\n            $seoKeywords = $modx->newObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        }\\n        if($seoKeywords){\\n            if (isset($_POST[\'keywords\'])){\\n                $seoKeywords->set(\'keywords\', trim($_POST[\'keywords\'], \',\'));\\n            } else {\\n                $seoKeywords->set(\'keywords\', \'\');\\n            }\\n            $seoKeywords->save();\\n        }\\n        break;\\n\\n    case \'onResourceDuplicate\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        if (!$seoKeywords) {\\n            $seoKeywords = $modx->newObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        }\\n        $newSeoKeywords = $modx->newObject(\'seoKeywords\');\\n        $newSeoKeywords->fromArray($seoKeywords->toArray());\\n        $newSeoKeywords->set(\'resource\', $newResource->get(\'id\'));\\n        $newSeoKeywords->save();\\n        break;\\n\\n    case \'OnLoadWebDocument\':\\n        if ($modx->context->get(\'key\') == \\"mgr\\") {\\n            break;\\n        }\\n        $template = ($modx->resource->get(\'template\')) ? (string)$modx->resource->get(\'template\') : \'\';\\n        if (in_array($template, $disabledTemplates)) {\\n            break;\\n        }\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $modx->resource->get(\'id\')));\\n        if ($seoKeywords) {\\n            $keyWords = $seoKeywords->get(\'keywords\');\\n            $modx->setPlaceholder(\'seoPro.keywords\', $keyWords);\\n        }\\n        $siteBranding = (boolean) $modx->getOption(\'seopro.allowbranding\', null, true);\\n        $siteDelimiter = $modx->getOption(\'seopro.delimiter\', null, \'\\/\');\\n        $siteUseSitename = (boolean) $modx->getOption(\'seopro.usesitename\', null, true);\\n        $siteID = $modx->resource->get(\'id\');\\n        $siteName = $modx->getOption(\'site_name\');\\n        $longtitle = $modx->resource->get(\'longtitle\');\\n        $pagetitle = $modx->resource->get(\'pagetitle\');\\n        $seoProTitle = array();\\n        if ($siteID == $modx->getOption(\'site_start\')) {\\n            $seoProTitle[\'pagetitle\'] = !empty($longtitle) ? $longtitle : $siteName;\\n        } else {\\n            $seoProTitle[\'pagetitle\'] = !empty($longtitle) ? $longtitle : $pagetitle;\\n            if ($siteUseSitename) {\\n                $seoProTitle[\'delimiter\'] = $siteDelimiter;\\n                $seoProTitle[\'sitename\'] = $siteName;\\n            }\\n        }\\n        $modx->setPlaceholder(\'seoPro.title\', implode(\\" \\", $seoProTitle));\\n        if ($siteBranding) {\\n            $modx->lexicon->load(\'seopro:default\');\\n            $modx->regClientStartupHTMLBlock(\'<!-- \' . $modx->lexicon(\'seopro.branding_text\') . \'-->\');\\n        }\\n        break;\\n}","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * The base seoPro snippet.\\n *\\n * @package seopro\\n *\\/\\n$seoPro = $modx->getService(\'seopro\', \'seoPro\', $modx->getOption(\'seopro.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/seopro\\/\') . \'model\\/seopro\\/\', $scriptProperties);\\nif (!($seoPro instanceof seoPro)) {\\n    return \'\';\\n}\\n\\n$disabledTemplates = explode(\',\', $modx->getOption(\'seopro.disabledtemplates\', null, \'0\'));\\n\\nswitch ($modx->event->name) {\\n    case \'OnDocFormRender\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n        \\n        \\n        $currClassKey = $resource->get(\'class_key\');\\n        $strFields = $modx->getOption(\'seopro.fields\', null, \'pagetitle:70,longtitle:70,description:155,alias:2023,menutitle:2023\');\\n        $arrFields = array();\\n        if (is_array(explode(\',\', $strFields))) {\\n            foreach (explode(\',\', $strFields) as $field) {\\n                list($fieldName, $fieldCount) = explode(\':\', $field);\\n                $arrFields[$fieldName] = $fieldCount;\\n            }\\n        } else {\\n            return \'\';\\n        }\\n\\n        $keywords = \'\';\\n        $modx->controller->addLexiconTopic(\'seopro:default\');\\n        if ($mode == \'upd\') {\\n            $url = $modx->makeUrl($resource->get(\'id\'), \'\', \'\', \'full\');\\n            $url = str_replace($resource->get(\'alias\'), \'<span id=\\\\\\"seopro-replace-alias\\\\\\">\' . $resource->get(\'alias\') . \'<\\/span>\', $url);\\n            $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n            if ($seoKeywords) {\\n                $keywords = $seoKeywords->get(\'keywords\');\\n            }\\n        } else {\\n            if ($_REQUEST[\'id\']) {\\n                $url = $modx->makeUrl($_REQUEST[\'id\'], \'\', \'\', \'full\');\\n                $url .= \'\\/<span id=\\\\\\"seopro-replace-alias\\\\\\"><\\/span>\';\\n            } else {\\n                $url = $modx->getOption(\'site_url\') . \'<span id=\\\\\\"seopro-replace-alias\\\\\\"><\\/span>\';\\n            }\\n        }\\n\\n        if ($_REQUEST[\'id\'] == $modx->getOption(\'site_start\')) {\\n            unset($arrFields[\'alias\']);\\n            unset($arrFields[\'menutitle\']);\\n        }\\n\\n\\n        $config = $seoPro->config;\\n        unset($config[\'resource\']);\\n        $modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            seoPro.config = \' . $modx->toJSON($config) . \';\\n            seoPro.config.record = \\"\' . $keywords . \'\\";\\n            seoPro.config.values = {};\\n            seoPro.config.fields = \\"\' . implode(\\",\\", array_keys($arrFields)) . \'\\";\\n            seoPro.config.chars = \' . $modx->toJSON($arrFields) . \'\\n            seoPro.config.url = \\"\' . $url . \'\\";\\n        });\\n    <\\/script>\');\\n\\n        \\/* include CSS and JS*\\/\\n        $version = $modx->getVersionData();\\n        if($version[\'version\'] == 2 && $version[\'major_version\'] == 2){\\n            $modx->regClientCSS($seoPro->config[\'assetsUrl\'] . \'css\\/mgr.css\');\\n        }else{\\n            $modx->regClientCSS($seoPro->config[\'assetsUrl\'] . \'css\\/mgr23.css\');\\n        }\\n        $modx->regClientStartupScript($seoPro->config[\'assetsUrl\'] . \'js\\/mgr\\/seopro.js??v=\' . $modx->getOption(\'seopro.version\', null, \'v1.0.0\'));\\n        $modx->regClientStartupScript($seoPro->config[\'assetsUrl\'] . \'js\\/mgr\\/resource.js?v=\' . $modx->getOption(\'seopro.version\', null, \'v1.0.0\'));\\n\\n        break;\\n\\n    case \'OnDocFormSave\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        if (!$seoKeywords && isset($resource)) {\\n            $seoKeywords = $modx->newObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        }\\n        if($seoKeywords){\\n            if (isset($_POST[\'keywords\'])){\\n                $seoKeywords->set(\'keywords\', trim($_POST[\'keywords\'], \',\'));\\n            } else {\\n                $seoKeywords->set(\'keywords\', \'\');\\n            }\\n            $seoKeywords->save();\\n        }\\n        break;\\n\\n    case \'onResourceDuplicate\':\\n        $template = (string)$resource->get(\'template\');\\n        $override = false;\\n        if (isset($_REQUEST[\'template\'])) {\\n            $template = (string)$_REQUEST[\'template\'];\\n            $override = true;\\n        }\\n        if (($override && $template === \'0\') || (!empty($template) && in_array($template, $disabledTemplates))) {\\n            break;\\n        }\\n\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        if (!$seoKeywords) {\\n            $seoKeywords = $modx->newObject(\'seoKeywords\', array(\'resource\' => $resource->get(\'id\')));\\n        }\\n        $newSeoKeywords = $modx->newObject(\'seoKeywords\');\\n        $newSeoKeywords->fromArray($seoKeywords->toArray());\\n        $newSeoKeywords->set(\'resource\', $newResource->get(\'id\'));\\n        $newSeoKeywords->save();\\n        break;\\n\\n    case \'OnLoadWebDocument\':\\n        if ($modx->context->get(\'key\') == \\"mgr\\") {\\n            break;\\n        }\\n        $template = ($modx->resource->get(\'template\')) ? (string)$modx->resource->get(\'template\') : \'\';\\n        if (in_array($template, $disabledTemplates)) {\\n            break;\\n        }\\n        $seoKeywords = $modx->getObject(\'seoKeywords\', array(\'resource\' => $modx->resource->get(\'id\')));\\n        if ($seoKeywords) {\\n            $keyWords = $seoKeywords->get(\'keywords\');\\n            $modx->setPlaceholder(\'seoPro.keywords\', $keyWords);\\n        }\\n        $siteBranding = (boolean) $modx->getOption(\'seopro.allowbranding\', null, true);\\n        $siteDelimiter = $modx->getOption(\'seopro.delimiter\', null, \'\\/\');\\n        $siteUseSitename = (boolean) $modx->getOption(\'seopro.usesitename\', null, true);\\n        $siteID = $modx->resource->get(\'id\');\\n        $siteName = $modx->getOption(\'site_name\');\\n        $longtitle = $modx->resource->get(\'longtitle\');\\n        $pagetitle = $modx->resource->get(\'pagetitle\');\\n        $seoProTitle = array();\\n        if ($siteID == $modx->getOption(\'site_start\')) {\\n            $seoProTitle[\'pagetitle\'] = !empty($longtitle) ? $longtitle : $siteName;\\n        } else {\\n            $seoProTitle[\'pagetitle\'] = !empty($longtitle) ? $longtitle : $pagetitle;\\n            if ($siteUseSitename) {\\n                $seoProTitle[\'delimiter\'] = $siteDelimiter;\\n                $seoProTitle[\'sitename\'] = $siteName;\\n            }\\n        }\\n        $modx->setPlaceholder(\'seoPro.title\', implode(\\" \\", $seoProTitle));\\n        if ($siteBranding) {\\n            $modx->lexicon->load(\'seopro:default\');\\n            $modx->regClientStartupHTMLBlock(\'<!-- \' . $modx->lexicon(\'seopro.branding_text\') . \'-->\');\\n        }\\n        break;\\n}"}',
+        'guid' => '746934fe3e660619df58bb8ceec6d8b0',
+        'native_key' => NULL,
+        'signature' => '7d621869fbd7583d82064fdfbf7ef393',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'seopro',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seopro-1.1.0-pl\\/modCategory\\/d2668536ec46447e3321f7a94bc8bb22\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"seopro"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seopro-1.1.0-pl\\/modCategory\\/d2668536ec46447e3321f7a94bc8bb22\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"seopro"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"seopro-1.1.0-pl\\/modCategory\\/d2668536ec46447e3321f7a94bc8bb22.gpm.resolve.tables.resolver","type":"php","name":"gpm.resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"seopro-1.1.0-pl\\/modCategory\\/d2668536ec46447e3321f7a94bc8bb22.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"seopro-1.1.0-pl\\/modCategory\\/d2668536ec46447e3321f7a94bc8bb22.stercextra.resolver.resolver","type":"php","name":"stercextra.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c9f81d13c074707467c9301b3a932663',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'd2668536ec46447e3321f7a94bc8bb22',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"seoPro","rank":0}',
+);

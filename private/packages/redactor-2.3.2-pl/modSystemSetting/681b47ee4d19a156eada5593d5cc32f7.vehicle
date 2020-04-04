@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7908e152b9d0813f6cce0e070ced6928',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '681b47ee4d19a156eada5593d5cc32f7',
+  'native_key' => 'redactor.dragUpload',
+  'object' => '{"key":"redactor.dragUpload","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1521814388}',
+);

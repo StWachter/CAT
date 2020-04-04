@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '00a62588d8fff8befb14f68da4ea1363',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '10b3b277ee717ed60299c7f6c2e7c065',
+  'native_key' => 'redactor.cleanFileNames',
+  'object' => '{"key":"redactor.cleanFileNames","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Advanced","editedon":1521814388}',
+);

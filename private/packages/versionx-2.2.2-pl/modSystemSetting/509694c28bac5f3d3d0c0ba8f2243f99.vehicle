@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'versionx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '94c010c6c867c428031d7f79350f8561',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '509694c28bac5f3d3d0c0ba8f2243f99',
+  'native_key' => 'versionx.formtabs.templatevariables',
+  'object' => '{"key":"versionx.formtabs.templatevariables","value":true,"xtype":"combo-boolean","namespace":"versionx","area":"formtabs","editedon":null}',
+);

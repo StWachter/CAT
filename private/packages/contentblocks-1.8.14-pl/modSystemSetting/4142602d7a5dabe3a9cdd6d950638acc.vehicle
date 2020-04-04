@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0e5fb15353a69399056155ae3242d278',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4142602d7a5dabe3a9cdd6d950638acc',
+  'native_key' => 'contentblocks.image.prefix_time',
+  'object' => '{"key":"contentblocks.image.prefix_time","value":false,"xtype":"modx-combo-boolean","namespace":"contentblocks","area":"Input: Image","editedon":1579190111}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '63a475b7e25fab22f930611b1cbd7235',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '000c85244b9f5864e20e4ea8387b70fb',
+  'native_key' => 'redactor.typeahead.include_introtext',
+  'object' => '{"key":"redactor.typeahead.include_introtext","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Resource Typeahead","editedon":1492766618}',
+);

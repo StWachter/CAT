@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '76be77b714b14118011800d516b0b3e1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6b4872e01f1db559a7351cdf2e2df708',
+  'native_key' => 'filesluggy.constrain_mediasource',
+  'object' => '{"key":"filesluggy.constrain_mediasource","value":"","xtype":"textfield","namespace":"filesluggy","area":"fs_type","editedon":null}',
+);

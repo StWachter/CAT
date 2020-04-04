@@ -1,0 +1,10 @@
+id: 7
+name: bigbrother.name
+description: bigbrother.desc
+type: file
+content: '[[++core_path]]components/bigbrother/controllers/widget.class.php'
+namespace: bigbrother
+lexicon: 'bigbrother:dashboard'
+size: full
+name_trans: 'Google Analytics'
+description_trans: 'BigBrother Dashboard Beschreibung'

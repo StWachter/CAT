@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'seopro',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '40f13e64fab0297baa1d8295766f707d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fc9cca3245dd4e87f992e115285c4494',
+  'native_key' => 'seopro.disabledtemplates',
+  'object' => '{"key":"seopro.disabledtemplates","value":"","xtype":"textfield","namespace":"seopro","area":"general","editedon":null}',
+);

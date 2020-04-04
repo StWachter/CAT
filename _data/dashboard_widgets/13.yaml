@@ -1,0 +1,9 @@
+id: 13
+name: BackupMODX
+description: 'Backup MODX Widget'
+type: snippet
+content: BackupMODXWidget
+namespace: backupmodx
+lexicon: 'backupmodx:default'
+name_trans: BackupMODX
+description_trans: 'Backup MODX Widget'

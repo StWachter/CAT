@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'da12a7ad18ee32d3e8df9879cfa5f496',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f3e2118634c6685878f56e54012833cf',
+  'native_key' => 'redactor.linkEmail',
+  'object' => '{"key":"redactor.linkEmail","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1505381885}',
+);

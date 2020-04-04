@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'bigbrother',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7c6d5faa44dc8b6cbb1a3bc866fa2ef6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1e5f01f7ee8353457407218bde959ca9',
+  'native_key' => 'bigbrother.date_end',
+  'object' => '{"key":"bigbrother.date_end","value":"yesterday","xtype":"textfield","namespace":"bigbrother","area":"Google Analytics for MODx Revolution","editedon":null}',
+);

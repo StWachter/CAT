@@ -1,0 +1,13 @@
+id: 5
+source: 2
+type: migx
+name: accordionRight
+caption: Akkordeon
+category: 'Spalte rechts'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:156:\"[\n{\"caption\":\"Anleser\", \"fields\": [\n    {\"field\":\"title\",\"caption\":\"Überschrift\"},\n    {\"field\":\"content\",\"caption\":\"Inhalt\",\"inputTVtype\":\"richtext\"}\n]}\n]\";s:7:\"columns\";s:170:\"[\n{\"header\": \"Überschrift\", \"width\": \"100\", \"sortable\": \"true\", \"dataIndex\": \"title\"},\n{\"header\": \"Inhalt\", \"width\": \"100\", \"sortable\": \"true\", \"dataIndex\": \"content\"}\n]\";s:7:\"btntext\";s:21:\"Akkordeon hinzufügen\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

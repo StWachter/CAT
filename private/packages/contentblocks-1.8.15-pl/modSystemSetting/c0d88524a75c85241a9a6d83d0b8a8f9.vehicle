@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5b6306feb6146227296635bdcaf328d1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c0d88524a75c85241a9a6d83d0b8a8f9',
+  'native_key' => 'contentblocks.crop_jpeg_quality',
+  'object' => '{"key":"contentblocks.crop_jpeg_quality","value":"90","xtype":"textfield","namespace":"contentblocks","area":"Input: Image","editedon":1585994253}',
+);

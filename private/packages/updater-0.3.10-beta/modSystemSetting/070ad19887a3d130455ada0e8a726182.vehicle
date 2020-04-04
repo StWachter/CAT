@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'updater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b84c6ff2788fe37b761067c894dffd44',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '070ad19887a3d130455ada0e8a726182',
+  'native_key' => 'updater.mail_format_html',
+  'object' => '{"key":"updater.mail_format_html","value":false,"xtype":"combo-boolean","namespace":"updater","area":"(1) Notifications: General","editedon":null}',
+);

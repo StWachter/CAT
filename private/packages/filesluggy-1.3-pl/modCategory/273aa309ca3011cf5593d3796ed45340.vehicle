@@ -1,0 +1,29 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'namespace' => 'filesluggy',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"filesluggy-1.3-pl\\/modCategory\\/273aa309ca3011cf5593d3796ed45340.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"filesluggy-1.3-pl\\/modCategory\\/273aa309ca3011cf5593d3796ed45340\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"filesluggy"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '54cb2984d23cd54dc06adf9756f7e458',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '273aa309ca3011cf5593d3796ed45340',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"FileSluggy","rank":0}',
+);

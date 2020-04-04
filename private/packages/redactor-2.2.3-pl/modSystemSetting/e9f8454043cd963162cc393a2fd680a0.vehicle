@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8820ed4ad0fb9b534bec93ad28ced6b5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e9f8454043cd963162cc393a2fd680a0',
+  'native_key' => 'redactor.uploadcare_tabs',
+  'object' => '{"key":"redactor.uploadcare_tabs","value":"all","xtype":"textfield","namespace":"redactor","area":"Uploadcare","editedon":1494496440}',
+);

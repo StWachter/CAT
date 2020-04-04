@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8acc8c8935e7e3ff92a64eca80b3b826',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8fdc714dd3bbbf3b139a2f4ff16f8902',
+  'native_key' => 'redactor.tabAsSpaces',
+  'object' => '{"key":"redactor.tabAsSpaces","value":"","xtype":"textfield","namespace":"redactor","area":"Editor","editedon":1521814388}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imageoptimonupload',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5cbcbb06e6eed680d819d419e07e4b71',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '80ee2f738d9830725f1afade1f5253a7',
+  'native_key' => 'imageoptimonupload.username',
+  'object' => '{"key":"imageoptimonupload.username","value":"","xtype":"textfield","namespace":"imageoptimonupload","area":"","editedon":null,"name":"ImageOptim Username","description":"ImageOptim API Username: <a href=\\"https:\\/\\/imageoptim.com\\/api\\/username\\" target=\\"_blank\\">https:\\/\\/imageoptim.com\\/api\\/username<\\/a>"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1296d8c03ce15fa84d7322adc20806f0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a8cf2ad328d25eecd548cdbe8df98bdf',
+  'native_key' => 'ugm_github_username',
+  'object' => '{"key":"ugm_github_username","value":"","xtype":"textfield","namespace":"upgrademodx","area":"GitHub","editedon":null,"name":"GitHub Username","description":"Your username at GitHub"}',
+);

@@ -1,0 +1,4 @@
+key: backupmodx.cronMaxDatabase
+value: '10'
+namespace: backupmodx
+area: Cron

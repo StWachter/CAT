@@ -1,0 +1,9 @@
+id: 14
+name: backupmodx.widget
+description: backupmodx.widget_desc
+type: file
+content: '[[++core_path]]components/backupmodx/elements/widgets/backupmodx.widget.php'
+namespace: backupmodx
+lexicon: 'backupmodx:default'
+name_trans: BackupMODX
+description_trans: 'Backup Dashboard Widget'

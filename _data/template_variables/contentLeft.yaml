@@ -1,0 +1,13 @@
+id: 4
+source: 2
+type: richtext
+name: contentLeft
+caption: 'Weitere Infos'
+category: 'Spalte links'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:0:{}'
+output_properties: 'a:0:{}'
+content: ''

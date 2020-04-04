@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1d87b45609da7bd7bea92efcba854fdb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '264605a08841f599a16393ff2e66668b',
+  'native_key' => 'redactor.linkProtocol',
+  'object' => '{"key":"redactor.linkProtocol","value":"","xtype":"textfield","namespace":"redactor","area":"Advanced","editedon":1505381885}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f3409c818929d720e227510384b53d51',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8dbe601fb3bdd58350534393ffc2097c',
+  'native_key' => 'contentblocks.image.crop_path',
+  'object' => '{"key":"contentblocks.image.crop_path","value":"assets\\/crops\\/","xtype":"textfield","namespace":"contentblocks","area":"Input: Image","editedon":1560417564}',
+);

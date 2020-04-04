@@ -1,0 +1,4 @@
+key: bigbrother.admin_groups
+value: 'Administrator,Redaktion'
+namespace: bigbrother
+area: 'Google Analytics for MODx Revolution'

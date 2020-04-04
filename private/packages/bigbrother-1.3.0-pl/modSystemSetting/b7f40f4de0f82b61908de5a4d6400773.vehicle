@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'bigbrother',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '20ebe9183c4ab1263bd244d08df6aaa6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b7f40f4de0f82b61908de5a4d6400773',
+  'native_key' => 'bigbrother.native_app_client_id',
+  'object' => '{"key":"bigbrother.native_app_client_id","value":"932629683766-qujj8lbna9ua8i3speskd392i4t7dt4m.apps.googleusercontent.com","xtype":"text-password","namespace":"bigbrother","area":"Google Analytics for MODx Revolution","editedon":null}',
+);

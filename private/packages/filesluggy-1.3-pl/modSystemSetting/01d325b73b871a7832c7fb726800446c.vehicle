@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7d0ced07af351bc4d5c4c107531cd5f7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '01d325b73b871a7832c7fb726800446c',
+  'native_key' => 'filesluggy.sanitizeDir',
+  'object' => '{"key":"filesluggy.sanitizeDir","value":true,"xtype":"combo-boolean","namespace":"filesluggy","area":"fs_type","editedon":null}',
+);

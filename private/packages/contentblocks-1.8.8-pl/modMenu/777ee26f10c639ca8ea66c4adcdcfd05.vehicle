@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '48351621a435b3765b3c5e02ba8e9cb5',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '777ee26f10c639ca8ea66c4adcdcfd05',
+  'native_key' => 'contentblocks.menu',
+  'object' => '{"text":"contentblocks.menu","parent":"components","action":"home","description":"contentblocks.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"contentblocks_component","namespace":"contentblocks"}',
+);

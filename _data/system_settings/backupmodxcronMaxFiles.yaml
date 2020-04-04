@@ -1,0 +1,4 @@
+key: backupmodx.cronMaxFiles
+value: '5'
+namespace: backupmodx
+area: Cron

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '65a12d759e29f130d40e58e48133a2ff',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2aac07747738d8a0eadfd5b391405352',
+  'native_key' => 'redactor.prefetch_ttl',
+  'object' => '{"key":"redactor.prefetch_ttl","value":"3600000","xtype":"textfield","namespace":"redactor","area":"Resource Typeahead","editedon":1550823323}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b6999f41943888e9dc75f2c85d2ef1b2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bece5f6ec3db3780e333da192f4f759c',
+  'native_key' => 'redactor.uploadcare_crop',
+  'object' => '{"key":"redactor.uploadcare_crop","value":"free","xtype":"textfield","namespace":"redactor","area":"Uploadcare","editedon":1563872937}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '071fd7fdb0124a2defe885f7719ad84e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '80733a5bbdd9f0b85e31a71ae85526f9',
+  'native_key' => 'redactor.imageEditable',
+  'object' => '{"key":"redactor.imageEditable","value":true,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1570629356}',
+);

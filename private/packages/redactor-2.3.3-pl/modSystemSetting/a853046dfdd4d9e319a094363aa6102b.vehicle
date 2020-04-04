@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6ab3c58da55b6f7bedc6a5d3bf14bbd5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a853046dfdd4d9e319a094363aa6102b',
+  'native_key' => 'redactor.file_upload_path',
+  'object' => '{"key":"redactor.file_upload_path","value":"assets\\/uploads\\/","xtype":"textfield","namespace":"redactor","area":"Media","editedon":1535007464}',
+);

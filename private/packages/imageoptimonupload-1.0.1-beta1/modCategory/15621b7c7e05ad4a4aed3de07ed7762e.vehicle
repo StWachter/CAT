@@ -1,0 +1,59 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '43e355a1a6f7a4d8993aad25673a5759' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"imageOptimOnUpload","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/*\\n * imageoptimonupload\\n *\\n *\\n * @author Jan D\\u00e4hne, Quadro <jan.daehne@quadro-system.de>\\n *\\/\\n\\nif ($modx->Event->name != \'OnFileManagerUpload\') return;\\n\\n\\n\\/\\/ configs \\/ settings\\n$username = $modx->getOption(\'imageoptimonupload.username\');\\n$options = $modx->getOption(\'imageoptimonupload.options\');\\n$fileTypeArray = explode(\\",\\", $modx->getOption(\'imageoptimonupload.filetypes\'));\\n\\n\\n\\/\\/ prefix fileTypeArray values with \\"image\\/\\" to \\"image\\/jpg etc.\\"\\narray_walk($fileTypeArray, function(&$value, $key) { $value = \'image\\/\' . $value; } );\\n\\n\\/\\/ get the file\\n$file = $modx->event->params[\'files\'][\'file\']; \\n\\n\\/\\/ abort on error\\nif ($file[\'error\']  !=  0) {\\n    $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload: $file[\\"error\\"] occured.\');\\n    return;\\n}\\n\\n\\/\\/ get upload directory from OnFileManagerUpload event\\n$directory = $modx->event->params[\'directory\']; \\n\\n\\/\\/ get filename\\n$fileName = $file[\'name\'];\\n\\n\\/\\/ get id of default_media_source\\n$defaultMediaSource = $modx->getOption(\'default_media_source\');\\n\\n\\/\\/ get modMediaSource object using default_media_source id\\n$mediaSource = $modx->getObject(\'modMediaSource\', array(\'id\' => $defaultMediaSource ));\\n\\n\\/\\/ get modMediaSource properties\\n$mediaSourceProps = $mediaSource->get(\'properties\');\\n$mediaSourceBasePath = $mediaSourceProps[\'basePath\'][\'value\'];\\n\\n\\/\\/ create Full-size master image URL\\n$sourceImageUrl = MODX_SITE_URL . $mediaSourceBasePath . $directory . $fileName;\\n$sourceImagePath = MODX_BASE_PATH . $mediaSourceBasePath . $directory . $fileName;\\n\\n\\/\\/ create target image path\\n$targetImagePath = MODX_BASE_PATH . $mediaSourceBasePath . $directory . $fileName;\\n\\n\\nif (in_array($file[\'type\'], $fileTypeArray)) { \\n\\n    \\/\\/ Settings needed to switch to the POST method\\n    $postContext = stream_context_create([\\n        \'http\' => [\\n            \'method\' => \'POST\',\\n        ],\\n    ]);\\n    \\n    \\/\\/ get image data from the API\\n    $imageData = @file_get_contents(\\n        \'https:\\/\\/im2.io\\/\' . $username . \'\\/\' . $options . \'\\/\' . $sourceImageUrl,\\n        false, $postContext);\\n    \\n    if ($http_response_header[0] == \'HTTP\\/1.1 200 OK\') {\\n        \\n        \\/\\/ $imageData contains resized\\/optimized image\\n        \\/\\/ save image\\n        @file_put_contents($targetImagePath, $imageData);\\n        \\n    }else {\\n        if ($http_response_header[0] == \'HTTP\\/1.1 523 PRIVATEURL\' or $http_response_header[0] == \'HTTP\\/1.1 401 Could not download image\') {\\n        \\n            \\/\\/ on local or protected enviroment use upload instead of post\\n            $ch = curl_init();\\n            curl_setopt($ch, CURLOPT_URL, \'https:\\/\\/im2.io\\/\' . $username . \'\\/\'. $options);\\n            curl_setopt($ch, CURLOPT_POST, true);\\n            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);\\n            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\\n            curl_setopt($ch, CURLOPT_POSTFIELDS, [\\n                \'file\' => curl_file_create($sourceImagePath),\\n            ]);\\n            $imageData = curl_exec($ch);\\n            $responseInfo = curl_getinfo($ch);\\n            curl_close($ch);\\n    \\n            if ($responseInfo[\'http_code\'] == 200) {\\n                \\/\\/ save image\\n                if (@file_put_contents($targetImagePath, $imageData) === false) {\\n                    $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload could not write cache file at \'.$targetImagePath);\\n                }\\n            }else {\\n                $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload (API Error): \'.var_dump($imageData));\\n            }\\n            \\n        }else {\\n            $modx->log(xPDO::LOG_LEVEL_ERROR, \'imageOptimOnUpload (API Error): \' . var_dump($http_response_header));    \\n        }\\n    }\\n}   \\n\\nreturn true;","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/*\\n * imageoptimonupload\\n *\\n *\\n * @author Jan D\\u00e4hne, Quadro <jan.daehne@quadro-system.de>\\n *\\/\\n\\nif ($modx->Event->name != \'OnFileManagerUpload\') return;\\n\\n\\n\\/\\/ configs \\/ settings\\n$username = $modx->getOption(\'imageoptimonupload.username\');\\n$options = $modx->getOption(\'imageoptimonupload.options\');\\n$fileTypeArray = explode(\\",\\", $modx->getOption(\'imageoptimonupload.filetypes\'));\\n\\n\\n\\/\\/ prefix fileTypeArray values with \\"image\\/\\" to \\"image\\/jpg etc.\\"\\narray_walk($fileTypeArray, function(&$value, $key) { $value = \'image\\/\' . $value; } );\\n\\n\\/\\/ get the file\\n$file = $modx->event->params[\'files\'][\'file\']; \\n\\n\\/\\/ abort on error\\nif ($file[\'error\']  !=  0) {\\n    $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload: $file[\\"error\\"] occured.\');\\n    return;\\n}\\n\\n\\/\\/ get upload directory from OnFileManagerUpload event\\n$directory = $modx->event->params[\'directory\']; \\n\\n\\/\\/ get filename\\n$fileName = $file[\'name\'];\\n\\n\\/\\/ get id of default_media_source\\n$defaultMediaSource = $modx->getOption(\'default_media_source\');\\n\\n\\/\\/ get modMediaSource object using default_media_source id\\n$mediaSource = $modx->getObject(\'modMediaSource\', array(\'id\' => $defaultMediaSource ));\\n\\n\\/\\/ get modMediaSource properties\\n$mediaSourceProps = $mediaSource->get(\'properties\');\\n$mediaSourceBasePath = $mediaSourceProps[\'basePath\'][\'value\'];\\n\\n\\/\\/ create Full-size master image URL\\n$sourceImageUrl = MODX_SITE_URL . $mediaSourceBasePath . $directory . $fileName;\\n$sourceImagePath = MODX_BASE_PATH . $mediaSourceBasePath . $directory . $fileName;\\n\\n\\/\\/ create target image path\\n$targetImagePath = MODX_BASE_PATH . $mediaSourceBasePath . $directory . $fileName;\\n\\n\\nif (in_array($file[\'type\'], $fileTypeArray)) { \\n\\n    \\/\\/ Settings needed to switch to the POST method\\n    $postContext = stream_context_create([\\n        \'http\' => [\\n            \'method\' => \'POST\',\\n        ],\\n    ]);\\n    \\n    \\/\\/ get image data from the API\\n    $imageData = @file_get_contents(\\n        \'https:\\/\\/im2.io\\/\' . $username . \'\\/\' . $options . \'\\/\' . $sourceImageUrl,\\n        false, $postContext);\\n    \\n    if ($http_response_header[0] == \'HTTP\\/1.1 200 OK\') {\\n        \\n        \\/\\/ $imageData contains resized\\/optimized image\\n        \\/\\/ save image\\n        @file_put_contents($targetImagePath, $imageData);\\n        \\n    }else {\\n        if ($http_response_header[0] == \'HTTP\\/1.1 523 PRIVATEURL\' or $http_response_header[0] == \'HTTP\\/1.1 401 Could not download image\') {\\n        \\n            \\/\\/ on local or protected enviroment use upload instead of post\\n            $ch = curl_init();\\n            curl_setopt($ch, CURLOPT_URL, \'https:\\/\\/im2.io\\/\' . $username . \'\\/\'. $options);\\n            curl_setopt($ch, CURLOPT_POST, true);\\n            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);\\n            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\\n            curl_setopt($ch, CURLOPT_POSTFIELDS, [\\n                \'file\' => curl_file_create($sourceImagePath),\\n            ]);\\n            $imageData = curl_exec($ch);\\n            $responseInfo = curl_getinfo($ch);\\n            curl_close($ch);\\n    \\n            if ($responseInfo[\'http_code\'] == 200) {\\n                \\/\\/ save image\\n                if (@file_put_contents($targetImagePath, $imageData) === false) {\\n                    $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload could not write cache file at \'.$targetImagePath);\\n                }\\n            }else {\\n                $modx->log(modX::LOG_LEVEL_ERROR, \'imageOptimOnUpload (API Error): \'.var_dump($imageData));\\n            }\\n            \\n        }else {\\n            $modx->log(xPDO::LOG_LEVEL_ERROR, \'imageOptimOnUpload (API Error): \' . var_dump($http_response_header));    \\n        }\\n    }\\n}   \\n\\nreturn true;"}',
+        'guid' => '2226e6976d0bf7a082824274793194f6',
+        'native_key' => 1,
+        'signature' => '0bc4871da2bf230b89c4ec7a848613e5',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'imageoptimonupload',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"imageoptimonupload-1.0.1-beta1\\/modCategory\\/15621b7c7e05ad4a4aed3de07ed7762e\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"imageoptimonupload"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"imageoptimonupload-1.0.1-beta1\\/modCategory\\/15621b7c7e05ad4a4aed3de07ed7762e.plugin.resolver.resolver","type":"php","name":"plugin.resolver"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"imageoptimonupload-1.0.1-beta1\\/modCategory\\/15621b7c7e05ad4a4aed3de07ed7762e.imageoptimonupload.resolver.resolver","type":"php","name":"imageoptimonupload.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6d642bc2ef9a1da47765bfbf3f09a967',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '15621b7c7e05ad4a4aed3de07ed7762e',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"ImageOptimOnUpload","rank":0}',
+);

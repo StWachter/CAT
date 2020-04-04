@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '342f07e9022035570403404bfd279ae5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '98c166add7aca3e3325ce8731f5e022d',
+  'native_key' => 'redactor.toolbarOverflow',
+  'object' => '{"key":"redactor.toolbarOverflow","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Toolbar","editedon":1494496440}',
+);

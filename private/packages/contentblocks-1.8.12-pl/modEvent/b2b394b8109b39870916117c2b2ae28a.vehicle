@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fc56416656231330f4ba49ab67be85a8',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'b2b394b8109b39870916117c2b2ae28a',
+  'native_key' => 'ContentBlocks_AfterRebuildContent',
+  'object' => '{"name":"ContentBlocks_AfterRebuildContent","service":6,"groupname":"contentblocks"}',
+);

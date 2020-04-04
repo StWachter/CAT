@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6b0b88f3c950b39eeebc5e814def48b0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '01ed665d14b75df76f0494fe39f9e353',
+  'native_key' => 'redactor.date_images',
+  'object' => '{"key":"redactor.date_images","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Media","editedon":1464213069}',
+);

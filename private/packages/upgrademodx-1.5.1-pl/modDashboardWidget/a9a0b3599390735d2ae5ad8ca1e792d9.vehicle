@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '94e7878224b1afe05b69379fd0dacd3f',
+  'package' => 'modx',
+  'class' => 'modDashboardWidget',
+  'signature' => 'a9a0b3599390735d2ae5ad8ca1e792d9',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Upgrade MODX","description":"Upgrade MODX Widget","type":"snippet","content":"UpgradeMODXWidget","namespace":"upgrademodx","lexicon":"upgrademodx:default","size":"half","name_trans":"Upgrade MODX","description_trans":"Upgrade MODX Widget"}',
+);

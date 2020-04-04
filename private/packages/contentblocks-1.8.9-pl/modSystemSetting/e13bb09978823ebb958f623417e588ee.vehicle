@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd509abaa8f2039d4057b30805e6ee955',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e13bb09978823ebb958f623417e588ee',
+  'native_key' => 'contentblocks.canvas_position',
+  'object' => '{"key":"contentblocks.canvas_position","value":"inherit","xtype":"textfield","namespace":"contentblocks","area":"Core","editedon":1560417564}',
+);

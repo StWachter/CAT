@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd87f20f0ab16a4f2821e5689d06ebc8b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a95ad10d1701d040b5a3fd894f1c39a1',
+  'native_key' => 'contentblocks.link.link_detection_pattern',
+  'object' => '{"key":"contentblocks.link.link_detection_pattern","value":"^(?:f|ht)tps?:\\\\\\/\\\\\\/","xtype":"textfield","namespace":"contentblocks","area":"Input: Link","editedon":1563872810}',
+);

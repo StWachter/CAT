@@ -1,0 +1,15 @@
+id: 8
+source: 2
+name: accordionTpl
+description: ''
+category: Template
+properties: 'a:0:{}'
+
+-----
+
+<div class="accordion js-accordion-parent">
+    <div class="accordion__button js-accordion-button"><svg class="accordion__icon"><use xlink:href="[[++project.assets_url]]img/sprite.svg#caret-down"></use></svg>[[+title]]</div>
+    <div class="accordion__content js-accordion-content">
+        [[+content]]
+    </div>
+</div>

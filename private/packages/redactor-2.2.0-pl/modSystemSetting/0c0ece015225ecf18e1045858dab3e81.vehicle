@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '33f0c472b4f07da1b575cc654e141eaf',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0c0ece015225ecf18e1045858dab3e81',
+  'native_key' => 'redactor.wym',
+  'object' => '{"key":"redactor.wym","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Editor","editedon":1464213069}',
+);

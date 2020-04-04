@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'seopro',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'aa475460363d6b1d82fe61232ca80c9e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '72b8c90c01fbbb91d26eae17cfd1d822',
+  'native_key' => 'seopro.searchengine',
+  'object' => '{"key":"seopro.searchengine","value":"google","xtype":"textfield","namespace":"seopro","area":"general","editedon":null}',
+);

@@ -1,0 +1,13 @@
+id: 6
+source: 2
+type: richtext
+name: contentRight
+caption: 'Weitere Infos'
+category: 'Spalte rechts'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:0:{}'
+output_properties: 'a:0:{}'
+content: ''

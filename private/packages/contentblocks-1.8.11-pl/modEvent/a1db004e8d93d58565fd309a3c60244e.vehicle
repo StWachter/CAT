@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'contentblocks',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '046acf731a471fa206cd9bf36a829c1c',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'a1db004e8d93d58565fd309a3c60244e',
+  'native_key' => 'ContentBlocks_RegisterInputs',
+  'object' => '{"name":"ContentBlocks_RegisterInputs","service":6,"groupname":"contentblocks"}',
+);

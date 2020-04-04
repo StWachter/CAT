@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'redactor',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cb9adf0f26864b30deb9eaeeeb12401a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7c99c7e87f5058d4bc0b302b5ea68000',
+  'native_key' => 'redactor.removeComments',
+  'object' => '{"key":"redactor.removeComments","value":false,"xtype":"modx-combo-boolean","namespace":"redactor","area":"Markup","editedon":1563872937}',
+);

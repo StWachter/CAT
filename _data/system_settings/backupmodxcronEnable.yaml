@@ -1,0 +1,5 @@
+key: backupmodx.cronEnable
+value: 'false'
+xtype: combo-boolean
+namespace: backupmodx
+area: Cron

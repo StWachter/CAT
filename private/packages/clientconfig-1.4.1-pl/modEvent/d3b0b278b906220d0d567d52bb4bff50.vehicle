@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'clientconfig',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8d0a38461c282147b7c483da048ac256',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'd3b0b278b906220d0d567d52bb4bff50',
+  'native_key' => 'ClientConfig_ConfigChange',
+  'object' => '{"name":"ClientConfig_ConfigChange","service":6,"groupname":"clientconfig"}',
+);

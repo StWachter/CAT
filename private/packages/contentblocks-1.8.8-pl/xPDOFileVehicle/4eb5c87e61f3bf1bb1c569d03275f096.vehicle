@@ -1,0 +1,31 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'contentblocks-1.8.8-pl/xPDOFileVehicle/4eb5c87e61f3bf1bb1c569d03275f096/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'contentblocks',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"contentblocks-1.8.8-pl\\/xPDOFileVehicle\\/4eb5c87e61f3bf1bb1c569d03275f096.encryption.resolver.resolver","name":"encryption.resolver"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"contentblocks-1.8.8-pl\\/xPDOFileVehicle\\/4eb5c87e61f3bf1bb1c569d03275f096.requirements.script.validator","name":"requirements.script"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => 'bb8d6e306d7b82ed83ecd47337374946',
+  'package' => '',
+  'signature' => '4eb5c87e61f3bf1bb1c569d03275f096',
+  'native_key' => 'bb8d6e306d7b82ed83ecd47337374946',
+);

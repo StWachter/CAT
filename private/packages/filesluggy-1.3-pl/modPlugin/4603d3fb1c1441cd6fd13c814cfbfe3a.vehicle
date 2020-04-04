@@ -1,0 +1,92 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '0dc19fa7338e69139486ebabe9d3820a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileManagerUpload","priority":0,"propertyset":0}',
+        'guid' => '06f1f5687b39c05cdab830629ac82c9d',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileManagerUpload',
+        ),
+        'signature' => '4e46be863d5ad82f563beb668574ad52',
+      ),
+      '08137c64720a67755a2b5200d02580ba' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileManagerDirCreate","priority":0,"propertyset":0}',
+        'guid' => 'a4fd90fb65124cb8179bbfc0e3bfc615',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileManagerDirCreate',
+        ),
+        'signature' => '96fbaa65f0876f0ceeed2cc6ea4ac908',
+      ),
+      '73c4606d9adfd10d522f13cce98eb3df' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileManagerDirRename","priority":0,"propertyset":0}',
+        'guid' => 'e11e5250c39dc4a8040d1ec50175f1e7',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileManagerDirRename',
+        ),
+        'signature' => '4d073a3ed8388b7afbe5984ad724e558',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'filesluggy',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '869e2b9dfa055d879a7fa2d6d0119a97',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '4603d3fb1c1441cd6fd13c814cfbfe3a',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"FileSluggy","description":"FileSluggy 1.3-pl plugin for MODx Revolution","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * FileSluggy by Sterc\\n * Sanitizes a filename on upload to be a nice and more clean filename, so it will work better with phpthumbof, pthumb and overall cleaner filenames and directories.\\n \\n * Copyright 2015 by Sterc\\n * FileSluggy is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * FileSluggy is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * formAlicious; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\n * @author Sterc <modx@sterc.nl>\\n * @credits:\\n *      - Based on the code of the sanitizefilename plugin of Benjamin Vauchel https:\\/\\/github.com\\/benjamin-vauchel\\/SanitizeFilename\\n *      - The Slug() phunction of AlixAxel https:\\/\\/github.com\\/alixaxel\\/phunction\\/blob\\/master\\/phunction\\/Text.php\\n * @version Version 1.2\\n * @package filesluggy\\n *\\/\\n\\n$FileSluggy = $modx->getService(\'filesluggy\', \'FileSluggy\', $modx->getOption(\'filesluggy.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/filesluggy\\/\') . \'model\\/filesluggy\\/\', $scriptProperties);\\nif (!($FileSluggy instanceof FileSluggy)) return;\\n\\nswitch ($modx->event->name) {\\n    case \'OnFileManagerDirCreate\':\\n    case \'OnFileManagerDirRename\':\\n        if ($FileSluggy->santizeAllowThisMediaSource($source->get(\'id\'))) {\\n            if ($modx->getOption(\'filesluggy.sanitizeDir\')) {\\n                $basePath = $source->getBasePath();\\n                $dirName  = basename($directory);\\n                $dirName  = $FileSluggy->sanitizeName($dirName, true);\\n                $source->renameContainer(str_replace($basePath, \'\', $directory), $dirName);\\n            }\\n        }\\n        break;\\n    case \'OnFileManagerUpload\':\\n        $url = parse_url($_SERVER[\'HTTP_REFERER\']);\\n        $query = $url[\'query\'];\\n        if (\\n            strpos($query,\'a=resource\\/create\') !== false || \\n            strpos($query,\'a=resource\\/update\') !== false || \\n            strpos($query,\'a=media\\/browser\') !== false \\n        ) {\\n            foreach ($files as $file) {\\n                if ($FileSluggy->santizeAllowThisMediaSource($source->get(\'id\'))) {\\n                    if (!$source->hasErrors()) {\\n                        if ($file[\'error\'] == 0) {\\n                            $basePath = $source->getBasePath();\\n                            $oldPath  = $directory . $file[\'name\'];\\n                            if ($FileSluggy->allowType($file[\'name\'])) {\\n                                $newFileName = $FileSluggy->sanitizeName($file[\'name\']);\\n                                if ($FileSluggy->checkFileNameChanged()) {\\n                                    $newFileName = $FileSluggy->checkFileExists($basePath . $directory . $newFileName);\\n                                    if ($source->renameObject($oldPath, $newFileName)) {\\n                                        return;\\n                                    } else {\\n                                        return;\\n                                    }\\n                                } else {\\n                                    return;\\n                                }\\n                            } else {\\n                                return;\\n                            }\\n                        } else {\\n                            return;\\n                        }\\n                    } else {\\n                        $modx->log(modX::LOG_LEVEL_ERROR, \'[FileSluggy] There was an error during the upload process...\');\\n                    }\\n                    return;\\n                }\\n                return;\\n            }\\n        }\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * FileSluggy by Sterc\\n * Sanitizes a filename on upload to be a nice and more clean filename, so it will work better with phpthumbof, pthumb and overall cleaner filenames and directories.\\n \\n * Copyright 2015 by Sterc\\n * FileSluggy is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * FileSluggy is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * formAlicious; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\n * @author Sterc <modx@sterc.nl>\\n * @credits:\\n *      - Based on the code of the sanitizefilename plugin of Benjamin Vauchel https:\\/\\/github.com\\/benjamin-vauchel\\/SanitizeFilename\\n *      - The Slug() phunction of AlixAxel https:\\/\\/github.com\\/alixaxel\\/phunction\\/blob\\/master\\/phunction\\/Text.php\\n * @version Version 1.2\\n * @package filesluggy\\n *\\/\\n\\n$FileSluggy = $modx->getService(\'filesluggy\', \'FileSluggy\', $modx->getOption(\'filesluggy.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/filesluggy\\/\') . \'model\\/filesluggy\\/\', $scriptProperties);\\nif (!($FileSluggy instanceof FileSluggy)) return;\\n\\nswitch ($modx->event->name) {\\n    case \'OnFileManagerDirCreate\':\\n    case \'OnFileManagerDirRename\':\\n        if ($FileSluggy->santizeAllowThisMediaSource($source->get(\'id\'))) {\\n            if ($modx->getOption(\'filesluggy.sanitizeDir\')) {\\n                $basePath = $source->getBasePath();\\n                $dirName  = basename($directory);\\n                $dirName  = $FileSluggy->sanitizeName($dirName, true);\\n                $source->renameContainer(str_replace($basePath, \'\', $directory), $dirName);\\n            }\\n        }\\n        break;\\n    case \'OnFileManagerUpload\':\\n        $url = parse_url($_SERVER[\'HTTP_REFERER\']);\\n        $query = $url[\'query\'];\\n        if (\\n            strpos($query,\'a=resource\\/create\') !== false || \\n            strpos($query,\'a=resource\\/update\') !== false || \\n            strpos($query,\'a=media\\/browser\') !== false \\n        ) {\\n            foreach ($files as $file) {\\n                if ($FileSluggy->santizeAllowThisMediaSource($source->get(\'id\'))) {\\n                    if (!$source->hasErrors()) {\\n                        if ($file[\'error\'] == 0) {\\n                            $basePath = $source->getBasePath();\\n                            $oldPath  = $directory . $file[\'name\'];\\n                            if ($FileSluggy->allowType($file[\'name\'])) {\\n                                $newFileName = $FileSluggy->sanitizeName($file[\'name\']);\\n                                if ($FileSluggy->checkFileNameChanged()) {\\n                                    $newFileName = $FileSluggy->checkFileExists($basePath . $directory . $newFileName);\\n                                    if ($source->renameObject($oldPath, $newFileName)) {\\n                                        return;\\n                                    } else {\\n                                        return;\\n                                    }\\n                                } else {\\n                                    return;\\n                                }\\n                            } else {\\n                                return;\\n                            }\\n                        } else {\\n                            return;\\n                        }\\n                    } else {\\n                        $modx->log(modX::LOG_LEVEL_ERROR, \'[FileSluggy] There was an error during the upload process...\');\\n                    }\\n                    return;\\n                }\\n                return;\\n            }\\n        }\\n        break;\\n}"}',
+);

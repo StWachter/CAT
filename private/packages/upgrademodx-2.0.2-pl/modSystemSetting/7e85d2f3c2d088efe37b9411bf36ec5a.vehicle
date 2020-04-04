@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'upgrademodx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0cde165d4f9bfa7b7ebb611f1f3474d7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7e85d2f3c2d088efe37b9411bf36ec5a',
+  'native_key' => 'ugm_modx_timeout',
+  'object' => '{"key":"ugm_modx_timeout","value":"6","xtype":"textfield","namespace":"upgrademodx","area":"Download","editedon":null,"name":"MODX Timeout","description":"Timeout in seconds for checking download status from MODX; default: 6"}',
+);

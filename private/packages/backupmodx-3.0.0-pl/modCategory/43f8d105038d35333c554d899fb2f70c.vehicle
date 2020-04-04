@@ -1,0 +1,96 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'backupmodx',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"backupmodx-3.0.0-pl\\/modCategory\\/43f8d105038d35333c554d899fb2f70c\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"backupmodx"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"backupmodx-3.0.0-pl\\/modCategory\\/43f8d105038d35333c554d899fb2f70c\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"backupmodx"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"backupmodx-3.0.0-pl\\/modCategory\\/43f8d105038d35333c554d899fb2f70c.resolve.setupoptions.resolver","type":"php","name":"resolve.setupoptions"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"backupmodx-3.0.0-pl\\/modCategory\\/43f8d105038d35333c554d899fb2f70c.resolve.cleanup.resolver","type":"php","name":"resolve.cleanup"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2fa20e6abd2b801e642720aec3f1fbed',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '43f8d105038d35333c554d899fb2f70c',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"BackupMODX","rank":0}',
+);

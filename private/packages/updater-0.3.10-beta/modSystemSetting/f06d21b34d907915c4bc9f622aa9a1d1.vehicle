@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'updater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '853c7c82177920d288ede238bcd1d7d6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f06d21b34d907915c4bc9f622aa9a1d1',
+  'native_key' => 'updater.modxcom_timeout',
+  'object' => '{"key":"updater.modxcom_timeout","value":1000,"xtype":"textfield","namespace":"updater","area":"(7) Cache","editedon":null}',
+);

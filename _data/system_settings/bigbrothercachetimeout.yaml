@@ -1,0 +1,4 @@
+key: bigbrother.cache_timeout
+value: '300'
+namespace: bigbrother
+area: 'Google Analytics for MODx Revolution'

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'clientconfig',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2b62491bfa7f51b99d83db78bf02616b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6347e634a776803abf4c3a196540c3b3',
+  'native_key' => 'clientconfig.context_aware',
+  'object' => '{"key":"clientconfig.context_aware","value":false,"xtype":"combo-boolean","namespace":"clientconfig","area":"Default","editedon":null}',
+);

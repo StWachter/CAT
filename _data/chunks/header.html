@@ -1,0 +1,43 @@
+id: 7
+source: 2
+name: header
+description: ''
+category: Template
+properties: 'a:0:{}'
+
+-----
+
+<div class="header__wrapper js-header header__toggle">
+    <div class="header__topLine">
+        <div class="container">
+            <div class="header__contact">
+                <div class="header__contactTitle">
+                    Kurse und Seminare für Gruppen <span class="colored"> | </span> Schulen <span class="colored"> | </span>Unternehmen
+                </div>
+                <div class="header__contactInfo">
+                    <a class="header__contactLink" href="tel:+4917664968297"><svg class="header__contactIcon"><use xlink:href="[[++project.assets_url]]img/sprite.svg#phone"></use></svg>0176.64968297</a>
+                    <a class="header__contactLink" href="mailto:kontakt@catharinaguth.de"><svg class="header__contactIcon"><use xlink:href="[[++project.assets_url]]img/sprite.svg#mail"></use></svg>kontakt@catharinaguth.de</a>
+      <a target="_blank" class="header__contactLink" href="https://www.facebook.com/catharinaguth/"><svg class="header__contactIcon"><use xlink:href="[[++project.assets_url]]img/sprite.svg#facebook"></use></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <ul class="header__logoWrapper">
+                <li class="header__logo"><a href="mbsr.html">MBSR<span class="colored"> | </span>Stressbewältigung durch Achtsamkeit</a></li>
+            </ul>
+            <div class="header__nav">
+                [[pdoMenu?
+                    &parents=`0`
+                    &resources=`1,12,13,14`
+                    &level=`0`
+                ]]
+            </div>
+            
+            <svg class="header__button active"><use xlink:href="[[++project.assets_url]]img/sprite.svg#bars"></use></svg></li>
+            <svg class="header__button"><use xlink:href="[[++project.assets_url]]img/sprite.svg#close"></use></svg>
+
+        </div>
+    </div>
+</div>

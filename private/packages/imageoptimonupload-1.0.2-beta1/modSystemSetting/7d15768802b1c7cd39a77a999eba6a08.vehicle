@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imageoptimonupload',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8230b9717f0e5eba5e8bd37f2e6ed0a9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7d15768802b1c7cd39a77a999eba6a08',
+  'native_key' => 'imageoptimonupload.options',
+  'object' => '{"key":"imageoptimonupload.options","value":"","xtype":"textfield","namespace":"imageoptimonupload","area":"","editedon":null,"name":"ImageOptim Options","description":"Comma separatet list of ImageOptim Options. Ex. 3000 or 100x100,crop. See documentation: <a href=\\"https:\\/\\/imageoptim.com\\/api\\/post\\" target=\\"_blank\\">https:\\/\\/imageoptim.com\\/api\\/post<\\/a>"}',
+);

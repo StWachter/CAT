@@ -1,0 +1,4 @@
+key: backupmodx.targetPath
+value: '{core_path}components/backupmodx/backups/'
+namespace: backupmodx
+area: Admin

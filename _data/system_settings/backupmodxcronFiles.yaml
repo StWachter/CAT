@@ -1,0 +1,5 @@
+key: backupmodx.cronFiles
+value: 'true'
+xtype: combo-boolean
+namespace: backupmodx
+area: Cron
