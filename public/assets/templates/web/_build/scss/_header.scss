@@ -134,10 +134,22 @@
         &Link {
             display: inline-flex;
             align-items: center;
-            margin-left: 2rem;
+            margin-left: 1.5rem;
 
             &:hover .header__contactIcon {
                 fill: $colorQuartery;
+            }
+
+            &:first-child {
+                @media (max-width: 800px) {
+                    margin-left: 0;
+                }
+            }
+
+            &Inner {
+                @media(max-width: 450px) {
+                    display: none;
+                }
             }
         }
 
@@ -151,6 +163,25 @@
 
         &Link:last-child &Icon {
             margin-right: 0;
+        }
+    }
+
+    &__social {
+        &Link {
+            margin-left: 1.5rem;
+        }
+
+        &Icon {
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            &--small {
+                position: relative;
+                top: 1px;
+                width: 17px;
+                height: 17px;
+            }
         }
     }
 }
