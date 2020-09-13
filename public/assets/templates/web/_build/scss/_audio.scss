@@ -1,0 +1,26 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	audio
+/*
+/* --------------------------------------------------------------------------- */
+.audio {
+    width: 500px;
+
+    @media(max-width: 600px) {
+        width: 260px !important;
+    }
+
+    &__wrapper {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__headline {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}

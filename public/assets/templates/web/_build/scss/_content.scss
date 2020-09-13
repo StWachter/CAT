@@ -1,0 +1,21 @@
+/* --------------------------------------------------------------------------- */
+/*
+/*	content
+/*
+/* --------------------------------------------------------------------------- */
+.content {
+
+	li {
+        padding-left: 8rem;
+
+        @media (max-width: 600px) {
+            padding-left: 3rem;
+        }
+
+        &:before {
+            content: "|";
+            color: $colorQuartery;
+            padding-right: 0.8rem;
+        }
+    }
+}

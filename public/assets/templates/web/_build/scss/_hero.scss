@@ -5,6 +5,7 @@
 /* --------------------------------------------------------------------------- */
 .hero {
     height: 100vh;
+    max-height: 1000px;
     min-height: 600px;
     position: relative;
 	@media (max-width: 320px) {}
